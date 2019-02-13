@@ -10,11 +10,7 @@ div {
     border-style: dotted;
     border-radius: 10px;
     resize: both;
-    overflow: auto;
-}
-
-a {
-    
+    overflow: auto
 }
 
 .cross {

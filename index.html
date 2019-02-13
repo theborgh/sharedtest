@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <title>Test project</title>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -35,23 +36,9 @@
     </div>
 
     <div>
-        <script>
-        
-        limit = 1000;
+        <h3>Javascript test: All prime numbers to 1000</h3>
 
-        document.write("<h3>Javascript test: All prime numbers to " + limit + "</h3>");
-
-        for(n = 2; n <= limit; n++) {
-            nIsPrime = true;
-            // it can be shown mathematically that I must only iterate until sqrt(n) to check for prime factors of n
-            for(i = 2; nIsPrime && i <= Math.sqrt(n); i++) {
-                if(n % i == 0)
-                    nIsPrime = false
-            }
-            if(nIsPrime)
-                document.write(n + " ");
-        }
-        </script>
+        <script type="application/javascript">printPrimesTo(1000, ' ');</script>
     </div>
 
     <div>
