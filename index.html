@@ -1,11 +1,36 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Test project</title>
-Test</head>
-<body><p>Hello, this is a test and I'm typing more things now.</p>
+    <title>Test project</title>
+</head>
+
+<body><p>Hello, this is a test.</p>
     <div>
         <ul>
             <li>Hey</li>
-        </ul></div>
+            <li>What's up?</li>
+        </ul>
+    </div>
+    <div>
+        <script>
+        // Write all prime numbers to 1000
+        limit = 1000;
+
+        document.write("<h2>Prime numbers to " + limit + "</h2>");
+
+        for(n = 2; n <= limit; n++) {
+            nIsPrime = true;
+            // it can be shown mathematically that I must only iterate until sqrt(n) to check for prime factors of n
+            for(i = 2; nIsPrime && i <= Math.sqrt(n); i++) {
+                if(n % i == 0)
+                    nIsPrime = false
+            }
+            if(nIsPrime)
+                document.write(n + " ");
+        }
+        </script>
+    </div>
 </body>
 </html>
+<!DOCTYPE HTML>
+<head></head>
