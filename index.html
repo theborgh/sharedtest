@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>Test project</title>
 </head>
 
-<body><p>Hello, this is a test.</p>
+<body>
+    <h2>Test of HTML tags</h2>
+
     <div>
+        <p>Unordered list</p>
+    
         <ul>
             <li>Hey</li>
             <li>What's up?</li>
         </ul>
     </div>
+
+    <div>
+        <p>Ordered list</p>
+            <ol>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+            </ol>
+        </div>
+
+    <div class="cross">
+        <h3>Crosshair cursor on hover</h3>
+        <p class="rtl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus harum libero animi velit tenetur illo quia cumque quod veritatis aperiam voluptatum, doloribus dolorem dicta expedita commodi hic. Nemo, odio amet.</p></div>
+
+    <div>
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in <strong>1948</strong>.<sup><a href="https://www.who.int/about" target="_blank">[1]</a></sup> They give H<sub>2</sub>O to children in need.</p>
+    </div>
+
     <div>
         <script>
-        // Write all prime numbers to 1000
+        
         limit = 1000;
 
-        document.write("<h2>Prime numbers to " + limit + "</h2>");
+        document.write("<h3>Javascript test: All prime numbers to " + limit + "</h3>");
 
         for(n = 2; n <= limit; n++) {
             nIsPrime = true;
@@ -30,7 +53,14 @@
         }
         </script>
     </div>
+
+    <div>
+        <h3>Image manipulation</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/061_-_Ferrari_Testarossa_-_Flickr_-_Price-Photography.jpg" height="200" width="300">
+        <img class="gray" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/061_-_Ferrari_Testarossa_-_Flickr_-_Price-Photography.jpg" height="200" width="300">
+        <img class="blurred" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/061_-_Ferrari_Testarossa_-_Flickr_-_Price-Photography.jpg" height="200" width="300">
+        <img class="saturated" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/061_-_Ferrari_Testarossa_-_Flickr_-_Price-Photography.jpg" height="200" width="300">
+    </div>
+
 </body>
 </html>
-<!DOCTYPE HTML>
-<head></head>
