@@ -1,66 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Test project</title>
-    <script type="text/javascript" src="script.js"></script>
+	<title>ZtM course site</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-    <h2>Test of HTML tags</h2>
-
-    <div>
-        <p>Unordered list</p>
-    
-        <ul>
-            <li>Hey</li>
-            <li>What's up?</li>
-        </ul>
-    </div>
-
-    <div>
-        <p>Ordered list</p>
-            <ol>
-                <li>First</li>
-                <li>Second</li>
-                <li>Third</li>
-            </ol>
+	<header>
+		<nav>
+			<ul>
+				<li>Navbar here (placeholder)</li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<div class="content">
+            <p>This site serves as a loose collection of my coding exercises and experiments as I complete the <a href="https://www.udemy.com/the-complete-web-developer-zero-to-mastery/">Zero to Mastery</a> web developer course on Udemy.</p>
         </div>
-
-    <div class="cross">
-        <h3>Crosshair cursor on hover</h3>
-        <p class="rtl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus harum libero animi velit tenetur illo quia cumque quod veritatis aperiam voluptatum, doloribus dolorem dicta expedita commodi hic. Nemo, odio amet.</p></div>
-
-    <div>
-        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in <strong>1948</strong>.<sup><a href="https://www.who.int/about" target="_blank">[1]</a></sup> They give H<sub>2</sub>O to children in need.</p>
-    </div>
-
-    <div>
-        <h3>Javascript test: All prime numbers to 1000</h3>
-
-        <script type="application/javascript">printPrimesTo(1000, ' ');</script>
-    </div>
-
-    <div>
-        <h3>Image manipulation</h3>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/061_-_Ferrari_Testarossa_-_Flickr_-_Price-Photography.jpg" height="200" width="300">
-        <img class="gray" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/061_-_Ferrari_Testarossa_-_Flickr_-_Price-Photography.jpg" height="200" width="300">
-        <img class="blurred" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/061_-_Ferrari_Testarossa_-_Flickr_-_Price-Photography.jpg" height="200" width="300">
-        <img class="saturated" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/061_-_Ferrari_Testarossa_-_Flickr_-_Price-Photography.jpg" height="200" width="300">
-    </div>
-
-    <div>
-        <h3>Forms</h3>
-        <!-- Use GET not POST -->
-        <form method="GET">
-            <strong>Name: </strong> <input type="text" name="name" placeholder="John" required><br>
-            <strong>Favorite pet: </strong> <input name="pet" value="Cat" type="radio" required> Cat <input name="pet" value="Dog" type="radio"> Dog<br>
-            <em>I solemnly swear that this information is true and accurate</em> <input type="checkbox" name="agree" required><br>
-            <input type="submit" value="Go">
-            <input type="reset">
-            
-        </form>
-    </div>
-
+        <div id="links">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="myfirstpage.html">First HTML page</a></li>
+                <li><a href="boxmodel.html">Box model experiment</a></li>
+            </ul>
+        </div>
+	</section>
 </body>
 </html>

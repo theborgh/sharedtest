@@ -1,0 +1,11 @@
+h2 {
+    color:green;
+}
+
+.boxmodel {
+    padding: 10px; /* from content to border */
+    border: 5px solid red; /* between padding and margin */
+    margin: 20px; /* external */
+    width: 700px; /* content */
+
+}
