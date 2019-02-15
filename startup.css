@@ -2,10 +2,9 @@
 body, html {
   width: 100%;
   height: 100%; 
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
+  background-position: center;
+  background-image: url("img/header.jpg");
+  background-size: cover;
 }
 
 hr {
@@ -14,14 +13,7 @@ hr {
   border-color: #F05F44; 
 }
 
-.faded {
-  color: rgba(255, 255, 255, 0.651); 
-}
-
-header.startup {
-  background-position: center;
-  background-image: url("img/header.jpg");
-  background-size: cover;
+header {
   height: 100%;
 }
 
@@ -31,14 +23,13 @@ header.startup hr {
 }
 
 header.startup h1 {
-  font-size: 2rem; 
+  font-size: 2rem;
 }
 
 .btn {
   font-weight: 700;
   text-transform: uppercase;
-  border-radius: 300px;
-  font-family: 'Montserrat', sans-serif;
+  border-radius: 100px;
 }
 
 .btn-xl {
@@ -52,7 +43,6 @@ header.startup h1 {
 .btn-primary:hover {
   background-color: #ee4b08;
   border-color: #ee4b08;
-  border-width: 5px;
   cursor: pointer;
 }
   
