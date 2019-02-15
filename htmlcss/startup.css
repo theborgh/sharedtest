@@ -7,19 +7,8 @@ body, html {
   background-size: cover;
 }
 
-hr {
-  max-width: 200px;
-  border-width: 3px;
-  border-color: #F05F44; 
-}
-
 header {
   height: 100%;
-}
-
-header.startup hr {
-  margin-top: 200px;
-  margin-bottom: 30px; 
 }
 
 header.startup h1 {
@@ -27,9 +16,11 @@ header.startup h1 {
 }
 
 .btn {
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 100px;
+    margin-top: 240px;
+    margin-bottom: 30px; 
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 100px;
 }
 
 .btn-xl {

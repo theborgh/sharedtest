@@ -1,37 +1,75 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>ZtM course site</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
 	<header>
-		<nav>
-			<ul>
-				<li>Navbar here (placeholder)</li>
-			</ul>
+		<!-- Bootstrap navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">ZtM course practice</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+
+			</div>
 		</nav>
 	</header>
 	<section>
 		<div class="content">
-            <p>This site serves as a loose collection of my coding exercises and experiments as I complete the <a href="https://www.udemy.com/the-complete-web-developer-zero-to-mastery/">Zero to Mastery</a> web developer course on Udemy.</p>
-        </div>
-        <div>
-            <h2>HTML/CSS</h2>
-            <ul>
-                <li><a href="myfirstpage.html">First HTML page</a></li>
-                <li><a href="boxmodel.html">Box model experiment</a></li>
-				<li><a href="flexbox.html">Flexbox/Transform test</a></li>
-				<li><a href="robot.html">Robot animation</a></li>
-				<li><a href="bootstrap.html">Bootstrap</a></li>
-				<li><a href="startup.html">Startup website</a></li>
+			<p>This site serves as a loose collection of my coding exercises and experiments as I complete the <a
+					href="https://www.udemy.com/the-complete-web-developer-zero-to-mastery/">Zero to Mastery</a> web
+				developer course on Udemy.</p>
+		</div>
+		<div class="content ">
+			<h2 class="sectiontitle">HTML/CSS</h2>
+			<ul>
+				<li><a href="htmlcss/myfirstpage.html">First HTML page</a></li>
+				<li><a href="htmlcss/boxmodel.html">Box model experiment</a></li>
+				<li><a href="htmlcss/flexbox.html">Flexbox/Transform test</a></li>
+				<li><a href="htmlcss/robot.html">Robot animation</a></li>
+				<li><a href="htmlcss/bootstrap.html">Bootstrap</a></li>
+				<li><a href="htmlcss/startup.html">Startup website</a></li>
 			</ul>
 		</div>
-		
-		<div>
+
+		<div class="content">
 			<h2>Javascript</h2>
 		</diV>
 	</section>
+
+
+	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
 </body>
+
 </html>
