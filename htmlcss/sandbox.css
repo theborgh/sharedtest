@@ -1,0 +1,69 @@
+html, body {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.padtable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    height: 40vh;
+    width: 40vw;
+    padding: 2vh;
+    margin: 2vh;
+    border: 2vh solid black;
+}
+
+.paddle {
+    height: 25vh;
+    width: 3vw;
+    border: 1vh solid gray;
+    margin: 2vh;
+    transition: 1s all;
+}
+
+.left {
+    align-self: center;
+    border-color: green;
+    justify-self: flex-start;
+}
+
+.right {
+    border-color: orangered;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.padtop {
+    transition: 1s all;
+}
+
+.padbot {
+    transition: 1s all;
+}
+
+.padtop:hover {
+    background:blue;
+    transform: translateY(-7vh);
+    
+}
+
+.padbot:hover {
+    background: red;
+    transform: translateY(7vh);
+}

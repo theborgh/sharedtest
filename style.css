@@ -13,6 +13,11 @@ div.content {
     overflow: auto
 }
 
+div.title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 .cross {
     cursor: crosshair;
 }
