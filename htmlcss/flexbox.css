@@ -19,7 +19,7 @@ h1 {
 
 .container {
     display: flex;
-    flex-wrap: wrap; /* Shorthand of flex-wrap:wrap; flex-direction:row; */
+    flex-wrap: wrap;
     justify-content: center;
 }
 
