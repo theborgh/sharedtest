@@ -71,3 +71,5 @@ var x = {
 }
 
 x.shout();
+
+x["name"] === x.name // true
