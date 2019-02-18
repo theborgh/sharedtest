@@ -44,13 +44,13 @@ function log(s) {
 
 function addButton(li) {
     var bu = document.createElement("button");
-    bu.appendChild(document.createTextNode("Done"));
+    bu.appendChild(document.createTextNode("Delete"));
+    bu.classList.add("liBtn");
     li.append(bu);
+    listenRemoveLi(bu);
 }
 
 var liList = document.querySelectorAll("li");
-
-
 
 // createElement(), createTextNode(), appendChild()
 liList.forEach(li => {
@@ -80,4 +80,14 @@ liList.forEach(li => {
     })
 });
 
-// new items are not clickable!
+var buList = document.querySelectorAll(".liBtn");
+buList.forEach(bu => {
+    listenRemoveLi(bu);
+});
+
+function listenRemoveLi(bu) {
+    bu.addEventListener("click", e => {
+        // get the li element, and delete it
+        bu.parentElement.remove();
+    })
+}
