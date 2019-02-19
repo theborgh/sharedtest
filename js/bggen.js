@@ -17,4 +17,3 @@ color1.addEventListener("input", e => {
 color2.addEventListener("input", e => {
     changeGradient(color1, color2);
 });
-
