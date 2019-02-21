@@ -33,8 +33,7 @@ for(p in basket) { // An array is ITERABLE and, of course, also ENUMERABLE
 const arr = [[0, 1], [2, 3], [4, 5]];
 
 // this is just to test the debugging features on VS Code and DevTools. To actually flatten, use arr.flat()
-debugger;
-const flattened = arr.reduce((a, b) => a.concat(b), []);
+const flattened = arr.reduce((a, b) => a.concat(b), []); /*?*/
 
 // Maximum stack size depends on the browser
 function maxCallStackSize0() {

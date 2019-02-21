@@ -10,8 +10,7 @@ setTimeout(() => {
     console.log(2);
 }, 2000);
 console.log(3)
-debugger;
-for(let i = 4; i < 1000; i ++)
+for(let i = 4; i < 100; i ++)
     console.log(i);
 
 /* setTimerOut() is part of the WEB API, not JS!
@@ -23,4 +22,12 @@ it checks the CALLBACK QUEUE, where it gets back to the CALL STACK
 and is finally executed. 
 
 What happens if the second param of setTimeout() is 0?
+
+console.log(2) only gets executed at the end of the for loop, when there are no more
+instructions to execute!
+
+WEB APIs are basically threads. Although the JS runtime is single-threaded,
+the APIs provide some (limited functionality, limited access) concurrent threads.
+
+For Node.js, you have C++ APIs instead of WEB APIs but the principle is the same.
  */
