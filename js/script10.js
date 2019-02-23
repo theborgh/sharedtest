@@ -10,7 +10,7 @@ setTimeout(() => {
     console.log(2);
 }, 2000);
 console.log(3)
-for(let i = 4; i < 100; i ++)
+for(let i = 4; i < 100; i++)
     console.log(i);
 
 /* setTimerOut() is part of the WEB API, not JS!
