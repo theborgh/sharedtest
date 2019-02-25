@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <title>Test project</title>
-    <script type="text/javascript" src="scripts/primes.js"></script>
+    <script type="text/javascript" src="myfirstpage.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,12 @@
     <div>
         <h3>Javascript test: All prime numbers to 1000</h3>
 
-        <script type="application/javascript">printPrimesTo(1000, ' ');</script>
+        <script type="application/javascript">
+            let t0 = performance.now();
+            printPrimesTo(1000, ' ');
+            let t1 = performance.now();
+            console.log(t1-t0);
+        </script>
     </div>
 
     <div>

@@ -10,7 +10,6 @@ function isPrime(n) {
 }
 
 function printPrimesTo(n, sep) {
-
     for(var i = 2; i <= n; i++) {
         if(isPrime(i))
             document.write(i + sep);
