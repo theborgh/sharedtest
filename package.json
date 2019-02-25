@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "eslint": "^5.13.0"
+    "eslint": "^5.13.0",
+    "lodash": "^4.17.11"
   },
   "devDependencies": {},
   "scripts": {
