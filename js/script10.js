@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 
 /* When a function is time-expensive for any reason (HTTP requests, API, complexity)
 it can be a good option to use async/await.
