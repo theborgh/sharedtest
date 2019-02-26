@@ -20,17 +20,17 @@ function primesTo(n) {
 }
 
 let t0 = performance.now();
-let arr0 = primesTo(1000);
+primesTo(1000);
 let t1 = performance.now();
 console.log(t1-t0);
 
 let t2 = performance.now();
-let arr1 = primesTo(10000);
+primesTo(10000);
 let t3 = performance.now();
 console.log(t3-t2);
 
 let t4 = performance.now();
-let arr2 = primesTo(100000);
+primesTo(100000);
 let t5 = performance.now();
 console.log(t5-t4);
 
