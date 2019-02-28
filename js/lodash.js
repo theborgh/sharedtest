@@ -14,3 +14,7 @@ console.log("test: ", _.without(arr, 3));
 
 let p = document.querySelector("#testp");
 p.innerText = "Hello";
+
+// NPM allows you to run scripts from package.json (such as to browserify)
+// Also, do NPM INSTALL on the folder with package.json to download all the
+// dependencies (will be downloaded to node_modules)
