@@ -18,10 +18,10 @@ const obj = {
     a: function() {
         console.log(this);
     },
-	b: "otherfield"
+    b: "otherfield"
 }
 
-// DO NOT write methods using arrow functions: the `this` within an arrow function!
+// DO NOT write methods using arrow functions!
 // Arrow functions close over the `this` of the LEXICALLY ENCLOSING CONTEXT,
 // so the `this` within the arrow function is the one that was current where I defined the object.
 // Arrow functions ARE NOT just a shorthand for function()!
