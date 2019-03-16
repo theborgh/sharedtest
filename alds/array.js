@@ -51,12 +51,78 @@ class MyArray {
 
 const s = new MyArray();
 
-s.push('h');
-s.push('e');
-s.push('l');
-s.push('l');
-s.push('o');
+for (el of ['h', 'e', 'l', 'l', 'o']) {
+   s.push(el);
+}
 
-while(s.length> 0) {
+while(s.length) {
    console.log(s.pop());
 }
+
+
+
+const reverse = s => {
+   if (!s || typeof s !== 'string') {
+      throw new Error("Invalid input");
+   }
+
+   if (s.length < 2) {
+      return s;
+   }
+
+   let tmpArr = new MyArray();
+   let res = '';
+
+   for (let i = 0; i < s.length; i++) {
+      tmpArr.push(s[i]);
+   }
+   
+   for(let i = 0; i < s.length; i++) {
+      res = res.concat(tmpArr.pop());
+   }
+   
+   return res;
+}
+
+const reverse2 = s => {
+
+   for (let i = 0; i < s.length/2; i++) {
+      let tmp = s[i];
+      s[i] = s[s.length-1-i];
+      s[s.length-1-i] = tmp;
+    }
+   return s;
+}
+
+const reverse3 = s => [...s].reverse().join('');
+
+console.log(reverse("hello world"));
+console.log(reverse2("hello world"));
+console.log(reverse3("hello world"));
+
+const mergeSortedArrays = (arr1, arr2) => {
+   let i = 0, j = 0;
+   let res = [];
+
+   if(!Array.isArray(arr1) || !Array.isArray(arr2)) {
+      return "ERROR: invalid input";
+   }
+
+   while (i < arr1.length && j < arr2.length) {
+      if (arr1[i] >= arr2[j]) {
+         res.push(arr2[j++]);
+      } else {
+         res.push(arr1[i++]);
+      }
+   }
+
+   if (i === arr1.length) {
+         res.push(...arr2.slice(j, arr2.length));
+   } else {
+      res.push(...arr1.slice(i, arr1.length));
+   }
+
+   return res;
+}
+
+console.log(mergeSortedArrays([-3, 2, 5, 5, 7], [0, 2, 5, 6, 99, 255]));
