@@ -39,7 +39,7 @@
 				<li><a href="js/script4.js">ES5 and ES6</a></li>
 				<li><a href="js/script5.js">Closure, currying, composing</a></li>
 				<li><a href="js/script6.js">More map, filter, reduce</a></li>
-				<li><a href="js/script7.js">Ref type, context, classes, => vs function()</a></li>
+				<li><a href="js/script7.js">Ref type, context, classes, =></a></li>
 				<li><a href="js/script8.js">ES7 and ES8</a></li>
 				<li><a href="js/script9.js">For of, for in</a></li>
 				<li><a href="js/script10.js">Basics of async/await</a></li>
@@ -55,6 +55,7 @@
 		
 		<div class="content">
 			<h2 class="sectiontitle">React</h2>
+			<div id="react_test"></div>
 			<ul class="pagelist">
 				<li>Robofriends (<a href="https://github.com/theborgh/robofriends">repo</a>,
 					 <a href="https://theborgh.github.io/robofriends/">live demo</a>)</a></li>
@@ -73,6 +74,14 @@
 				</ul>
 		</div>
 	</section>
+
+	<!-- Load React. -->
+	<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+	<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+	<!-- Load our React component. -->
+	<script src="react_test.js"></script>
 
 </body>
 
