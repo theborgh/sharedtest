@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 
 var arr = [1, 3, 1, 4, 234, 2];
 

@@ -62,3 +62,23 @@ console.log(performance.now() - time2);
 // 0.10000000474974513
 // 1.400000008288771
 // 8.90000001527369
+
+// SECOND TIMING METHOD
+
+console.time('someTask');
+
+// Whatever is timed goes between the two "console.time"
+
+console.timeEnd('someTask');
+
+// THIRD TIMING METHOD
+
+var start = new Date().getTime();
+
+for (let i = 0; i < 50000; ++i) {
+    // do something
+}
+
+let end = new Date().getTime();
+let time = end - start;
+alert('Execution time: ' + time);

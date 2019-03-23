@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 
 // querySelector(), querySelectorAll()
 // document.getElementById() Name() TagName()

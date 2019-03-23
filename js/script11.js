@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 // Spread operator
 const animals = {
     tiger: 23,

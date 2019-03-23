@@ -9,7 +9,6 @@ div.content {
     padding: 10px;
     border-style: dotted;
     border-radius: 10px;
-    resize: both;
     overflow: auto
 }
 

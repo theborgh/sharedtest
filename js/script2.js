@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 var user = {
     username: "Pasquale",
     password: "Ciliegia"

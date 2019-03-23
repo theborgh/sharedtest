@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 
 // CLOSURES part I
 const a = () => {

@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 
 if (4 + 3 === 7) {
     console.log("U Smurt!");
