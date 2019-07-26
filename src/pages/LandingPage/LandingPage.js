@@ -3,11 +3,16 @@ import "./LandingPage.scss";
 import ScrollDownArrow from "../../components/ScrollDownArrow/ScrollDownArrow";
 
 const LandingPage = ({scrollDownArrow}) => (
-  <div>
-    Landing page
+  <div className="LandingPage">
+    <h1>Dario Borghino</h1>
+    <h2>Front-end Developer</h2>
+    <ul className="social">
+      <li>Github</li>
+      <li>LinkedIn</li>
+    </ul>
     {
       scrollDownArrow ? 
-        <ScrollDownArrow /> : null
+        <div className="arrow"><ScrollDownArrow /></div> : null
     }
   </div>
 )

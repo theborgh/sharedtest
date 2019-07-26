@@ -1,3 +1,10 @@
 .ScrollDownArrow {
+  display: block;
+  flex-direction: column;
+  justify-content: flex-end;
   text-align: center;
+}
+
+@keyframes bounce {
+
 }
