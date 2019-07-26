@@ -1,14 +1,15 @@
 .navbar {
   display: flex;
   justify-content: flex-end;
+  position: fixed;
   min-width: 100vw;
   background-color: rgba(250, 250, 250, 0.1);
   color: rgb(60, 160, 175);
   margin-right: 20px;
   
-  ul li {
+  li {
     display: inline-block;
-    margin: 10px;
+    margin-right: 20px;
     list-style: none;
     font-size: rem;
   }

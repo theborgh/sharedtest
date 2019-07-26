@@ -3,7 +3,7 @@ import "./ScrollDownArrow.scss";
 
 const ScrollDownArrow = () => {
   return (
-    <div>
+    <div className="ScrollDownArrow">
       ScrollDownArrow
     </div>
   )
