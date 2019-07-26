@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 
 function isPrime(n) {
     var nIsPrime = true;
@@ -15,3 +16,5 @@ function printPrimesTo(n, sep) {
             document.write(i + sep);
     }
 }
+
+export { isPrime, printPrimesTo };
