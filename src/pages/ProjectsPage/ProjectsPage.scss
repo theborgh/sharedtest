@@ -1,14 +1,6 @@
-.ProjectsPage {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background-color: rgb(72, 136, 122);
-  color: white;
-  margin-bottom: 0;
+@import '../page.scss';
 
-  .arrow {
-    margin-top: auto;
-    text-align: center;
-    margin-bottom: 20px;
-  }
+.ProjectsPage {
+  @include pagebase;
+  background-color: rgb(72, 136, 122);
 }

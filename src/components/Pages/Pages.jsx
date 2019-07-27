@@ -2,9 +2,9 @@ import React from 'react';
 import './Pages.scss';
 import HomePage from '../../pages/HomePage/HomePage';
 import AboutPage from '../../pages/AboutPage/AboutPage';
-import ProjectsPage from '../../pages/ProjectsPage/ProjectsPage';
 import SkillsPage from '../../pages/SkillsPage/SkillsPage';
 import LearningPage from '../../pages/LearningPage/LearningPage';
+import ProjectsPage from '../../pages/ProjectsPage/ProjectsPage';
 
 const Pages = () => {
   const PageMap = [

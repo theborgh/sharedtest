@@ -1,0 +1,13 @@
+@mixin pagebase {  
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+  margin-bottom: 0;
+
+  .arrow {
+    margin-top: auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
