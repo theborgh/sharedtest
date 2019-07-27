@@ -3,12 +3,13 @@ import "./AboutPage.scss";
 import ScrollDownArrow from "../../components/ScrollDownArrow/ScrollDownArrow";
 
 const AboutPage = ({ scrollDownArrow }) => (
-  <div>
+  <div className="AboutPage">
     About page
     {
       scrollDownArrow ? 
-        <ScrollDownArrow /> : null
+        <div className="arrow"><ScrollDownArrow /></div> : null
     }
+
   </div>
 )
 

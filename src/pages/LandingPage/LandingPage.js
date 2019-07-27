@@ -9,6 +9,8 @@ const LandingPage = ({scrollDownArrow}) => (
     <ul className="social">
       <li>Github</li>
       <li>LinkedIn</li>
+      <li>Twitter</li>
+      <li>Medium</li>
     </ul>
     {
       scrollDownArrow ? 

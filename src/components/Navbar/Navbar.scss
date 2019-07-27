@@ -5,12 +5,41 @@
   min-width: 100vw;
   background-color: rgba(250, 250, 250, 0.1);
   color: white;
-  margin-right: 20px;
+  
+  ul {
+    margin-right: 10px;
+  }
   
   li {
     display: inline-block;
     margin-right: 20px;
     list-style: none;
-    font-size: rem;
+    font-size: 0.6rem;
+  }
+}
+
+// Tablet (portrait)
+@media only screen and (min-width: 580px) {
+  .navbar {
+    ul {
+      margin-right: 20px;
+    }
+  
+    li {
+      font-size: 1rem;
+    }
+  }
+}
+
+// 4K
+@media only screen and (min-width: 2160px) {
+  .navbar {
+    ul {
+    margin-right: 40px;
+    }
+  
+    li {
+      font-size: 2rem;
+    }
   }
 }
