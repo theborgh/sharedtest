@@ -1,5 +1,5 @@
 import React from 'react';
-import './LandingPage.scss';
+import './HomePage.scss';
 import PropTypes from 'prop-types';
 import ScrollDownArrow from '../../components/ScrollDownArrow/ScrollDownArrow';
 
