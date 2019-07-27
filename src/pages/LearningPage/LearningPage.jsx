@@ -3,17 +3,22 @@ import './LearningPage.scss';
 import PropTypes from 'prop-types';
 import ScrollDownArrow from '../../components/ScrollDownArrow/ScrollDownArrow';
 
-const LearningPage = ({ scrollDownArrow }) => {
+const LearningPage = ({ scrollDownArrow, target }) => {
   LearningPage.propTypes = {
-    scrollDownArrow: PropTypes.bool.isRequired,
+    scrollDownArrow: PropTypes.bool,
+    target: PropTypes.string.isRequired,
+  };
+  LearningPage.defaultProps = {
+    scrollDownArrow: false,
   };
 
   return (
-    <div className="LearningPage">
+    <div id="learning" className="LearningPage">
       <h1>Learning page</h1>
       <p>
         Continuing education is an essential requirement for software developers,
-        moreso on the frontend. This is what&#39;s currently on my map:
+        moreso in the rapidly evolving world of frontend development. This is what&#39;s
+        currently on my map:
       </p>
       Learning:
       <ul>
@@ -29,7 +34,7 @@ const LearningPage = ({ scrollDownArrow }) => {
       </ul>
       {
         scrollDownArrow
-          ? <div className="arrow"><ScrollDownArrow /></div> : null
+          ? <div className="arrow"><ScrollDownArrow target={target} /></div> : null
       }
     </div>
   );

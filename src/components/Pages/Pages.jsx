@@ -9,10 +9,10 @@ import LearningPage from '../../pages/LearningPage/LearningPage';
 
 const Pages = () => (
   <div className="Pages">
-    <LandingPage scrollDownArrow />
-    <AboutPage scrollDownArrow />
-    <SkillsPage scrollDownArrow />
-    <LearningPage scrollDownArrow />
+    <LandingPage scrollDownArrow target="about" />
+    <AboutPage scrollDownArrow target="skills" />
+    <SkillsPage scrollDownArrow target="learning" />
+    <LearningPage scrollDownArrow target="projects" />
     <ProjectsPage scrollDownArrow={false} />
   </div>
 );
