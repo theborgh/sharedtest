@@ -31,6 +31,7 @@ const Pages = () => {
       {
         PageMap.map(Page => (
           <Page
+            key={Page}
             scrollDownArrow={Page !== ProjectsPage}
             target={nextPageName(Page)}
           />
