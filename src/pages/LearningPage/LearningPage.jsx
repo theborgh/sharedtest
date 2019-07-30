@@ -24,6 +24,9 @@ const LearningPage = ({ scrollDownArrow, target }) => {
       <ul>
         <li>Material UI</li>
         <li>Next.js</li>
+        <li>Udemy courses</li>
+        <li>GraphQL</li>
+        <li>Docker</li>
       </ul>
       Some of the things I&#39;m reading:
       <ul>

@@ -2,4 +2,8 @@
 
 .SkillsPage {
   @include pagebase;
+
+  .RadarChart {
+    text-align: center;
+  }
 }

@@ -14,7 +14,13 @@ const ProjectsPage = ({ scrollDownArrow }) => {
 
   return (
     <div id="projects" className="ProjectsPage">
-      Projects page
+      <h1>Projects page</h1>
+      <ul>
+        <li>FaceBlur</li>
+        <li>Clothing Shop</li>
+        <li>Game of Fifteen</li>
+        <li>Chingu project</li>
+      </ul>
       {
         scrollDownArrow
           ? <div className="arrow"><ScrollDownArrow /></div> : null
