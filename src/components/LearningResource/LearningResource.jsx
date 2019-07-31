@@ -13,8 +13,8 @@ const learningResource = ({ name, description, skills }) => {
     <div className="LearningResource">
       {name}
       {description}
-      {
-        skills.map(skill => `${skill} `)
+      { skills
+        ? skills.map(skill => `${skill} `) : null
       }
     </div>
   );
