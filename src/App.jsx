@@ -1,20 +1,14 @@
-import React, { Component } from 'react';
-import './App.scss';
-import Navbar from './components/Navbar/Navbar';
-import Pages from './components/Pages/Pages';
-import Footer from './components/Footer/Footer';
+import React, { Component } from "react";
+import "./App.scss";
+import Navbar from "./components/Navbar/Navbar";
+import Pages from "./components/Pages/Pages";
+import Footer from "./components/Footer/Footer";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      pages: [
-        'Home',
-        'About',
-        'Skills',
-        'Learning',
-        'Projects',
-      ],
+      pages: ["Home", "About", "Skills", "Learning", "Progjects"]
     };
   }
 
