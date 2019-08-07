@@ -1,4 +1,4 @@
-@import '../page';
+@import "../page";
 
 .LandingPage {
   @include pagebase;
@@ -20,6 +20,7 @@
   ul {
     text-align: center;
     list-style: none;
+    padding: 0px;
 
     li {
       display: inline-block;

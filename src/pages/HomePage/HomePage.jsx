@@ -1,16 +1,20 @@
-import React from 'react';
-import './HomePage.scss';
-import PropTypes from 'prop-types';
-import ScrollDownArrow from '../../components/ScrollDownArrow/ScrollDownArrow';
+import React from "react";
+import "./HomePage.scss";
+import PropTypes from "prop-types";
+import ScrollDownArrow from "../../components/ScrollDownArrow/ScrollDownArrow";
+import { ReactComponent as GithubLogo } from "../../assets/githubLogo.svg";
+import { ReactComponent as LinkedinLogo } from "../../assets/linkedinLogo.svg";
+import { ReactComponent as TwitterLogo } from "../../assets/twitterLogo.svg";
+import { ReactComponent as MediumLogo } from "../../assets/mediumLogo.svg";
 
 const LandingPage = ({ scrollDownArrow, target }) => {
   LandingPage.propTypes = {
     scrollDownArrow: PropTypes.bool,
-    target: PropTypes.string.isRequired,
+    target: PropTypes.string.isRequired
   };
 
   LandingPage.defaultProps = {
-    scrollDownArrow: false,
+    scrollDownArrow: false
   };
 
   return (
@@ -18,15 +22,32 @@ const LandingPage = ({ scrollDownArrow, target }) => {
       <h1>Dario Borghino</h1>
       <h2>Front-end Developer</h2>
       <ul className="social">
-        <li>Github</li>
-        <li>LinkedIn</li>
-        <li>Twitter</li>
-        <li>Medium</li>
+        <li>
+          <a href="https://github.com/theborgh">
+            <GithubLogo />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/">
+            <LinkedinLogo />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/the_borgh">
+            <TwitterLogo />
+          </a>
+        </li>
+        <li>
+          <a href="https://medium.com/@the_borgh_88758">
+            <MediumLogo />
+          </a>
+        </li>
       </ul>
-      {
-        scrollDownArrow
-          ? <div className="arrow"><ScrollDownArrow target={target} /></div> : null
-      }
+      {scrollDownArrow ? (
+        <div className="arrow">
+          <ScrollDownArrow target={target} />
+        </div>
+      ) : null}
     </div>
   );
 };
