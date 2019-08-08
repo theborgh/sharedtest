@@ -5,10 +5,10 @@ import RadarChart from "react-svg-radar-chart";
 import ScrollDownArrow from "../../components/ScrollDownArrow/ScrollDownArrow";
 import "react-svg-radar-chart/build/css/index.css";
 
-const SkillsPage = ({ scrollDownArrow, target }) => {
+const SkillsPage = ({ scrollDownArrow, scrollDownTarget }) => {
   SkillsPage.propTypes = {
     scrollDownArrow: PropTypes.bool,
-    target: PropTypes.string.isRequired
+    scrollDownTarget: PropTypes.string.isRequired
   };
   SkillsPage.defaultProps = {
     scrollDownArrow: false
@@ -49,7 +49,7 @@ const SkillsPage = ({ scrollDownArrow, target }) => {
 
       {scrollDownArrow ? (
         <div className="arrow">
-          <ScrollDownArrow target={target} />
+          <ScrollDownArrow target={scrollDownTarget} />
         </div>
       ) : null}
     </div>

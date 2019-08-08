@@ -5,10 +5,10 @@ import { learned, learning } from "./learningData";
 import ScrollDownArrow from "../../components/ScrollDownArrow/ScrollDownArrow";
 import LearningResource from "../../components/LearningResource/LearningResource";
 
-const LearningPage = ({ scrollDownArrow, target }) => {
+const LearningPage = ({ scrollDownArrow, scrollDownTarget }) => {
   LearningPage.propTypes = {
     scrollDownArrow: PropTypes.bool,
-    target: PropTypes.string.isRequired
+    scrollDownTarget: PropTypes.string.isRequired
   };
 
   LearningPage.defaultProps = {
@@ -61,7 +61,7 @@ const LearningPage = ({ scrollDownArrow, target }) => {
       </ul>
       {scrollDownArrow ? (
         <div className="arrow">
-          <ScrollDownArrow target={target} />
+          <ScrollDownArrow target={scrollDownTarget} />
         </div>
       ) : null}
     </div>

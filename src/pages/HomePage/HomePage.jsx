@@ -7,10 +7,10 @@ import { ReactComponent as LinkedinLogo } from "../../assets/linkedinLogo.svg";
 import { ReactComponent as TwitterLogo } from "../../assets/twitterLogo.svg";
 import { ReactComponent as MediumLogo } from "../../assets/mediumLogo.svg";
 
-const LandingPage = ({ scrollDownArrow, target }) => {
+const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
   LandingPage.propTypes = {
     scrollDownArrow: PropTypes.bool,
-    target: PropTypes.string.isRequired
+    scrollDownTarget: PropTypes.string.isRequired
   };
 
   LandingPage.defaultProps = {
@@ -45,7 +45,7 @@ const LandingPage = ({ scrollDownArrow, target }) => {
       </ul>
       {scrollDownArrow ? (
         <div className="arrow">
-          <ScrollDownArrow target={target} />
+          <ScrollDownArrow target={scrollDownTarget} />
         </div>
       ) : null}
     </div>

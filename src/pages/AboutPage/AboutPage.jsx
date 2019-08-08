@@ -3,10 +3,10 @@ import "./AboutPage.scss";
 import PropTypes from "prop-types";
 import ScrollDownArrow from "../../components/ScrollDownArrow/ScrollDownArrow";
 
-const AboutPage = ({ scrollDownArrow, target }) => {
+const AboutPage = ({ scrollDownArrow, scrollDownTarget }) => {
   AboutPage.propTypes = {
     scrollDownArrow: PropTypes.bool.isRequired,
-    target: PropTypes.string.isRequired
+    scrollDownTarget: PropTypes.string.isRequired
   };
 
   return (
@@ -84,7 +84,7 @@ const AboutPage = ({ scrollDownArrow, target }) => {
 
       {scrollDownArrow ? (
         <div className="arrow">
-          <ScrollDownArrow target={target} />
+          <ScrollDownArrow target={scrollDownTarget} />
         </div>
       ) : null}
     </div>
