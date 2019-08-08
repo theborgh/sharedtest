@@ -1,57 +1,57 @@
-import React from 'react';
-import './SkillsPage.scss';
-import PropTypes from 'prop-types';
-import RadarChart from 'react-svg-radar-chart';
-import ScrollDownArrow from '../../components/ScrollDownArrow/ScrollDownArrow';
-import 'react-svg-radar-chart/build/css/index.css';
+import React from "react";
+import "./SkillsPage.scss";
+import PropTypes from "prop-types";
+import RadarChart from "react-svg-radar-chart";
+import ScrollDownArrow from "../../components/ScrollDownArrow/ScrollDownArrow";
+import "react-svg-radar-chart/build/css/index.css";
 
 const SkillsPage = ({ scrollDownArrow, target }) => {
   SkillsPage.propTypes = {
     scrollDownArrow: PropTypes.bool,
-    target: PropTypes.string.isRequired,
+    target: PropTypes.string.isRequired
   };
   SkillsPage.defaultProps = {
-    scrollDownArrow: false,
+    scrollDownArrow: false
   };
 
   const data = [
     {
       data: {
-        battery: 0.7,
-        design: 0.8,
-        useful: 0.9,
-        speed: 0.67,
-        weight: 1,
+        react: 0.7,
+        javascript: 0.8,
+        redux: 0.9,
+        testing: 0.67,
+        english: 0.95,
+        css: 0.75,
+        responsive: 0.8
       },
-      meta: { color: 'rgba(56, 100, 122, 1)' },
-    },
+      meta: { color: "rgba(56, 100, 122, 1)" }
+    }
   ];
 
   const captions = {
-    battery: 'React',
-    design: 'Javascript',
-    useful: 'Redux',
-    speed: 'Testing',
-    weight: 'English',
+    react: "React",
+    javascript: "Javascript",
+    redux: "Redux",
+    testing: "Testing",
+    english: "English",
+    css: "CSS",
+    responsive: "Responsive design"
   };
-
 
   return (
     <div id="skills" className="SkillsPage">
       <h1>Skills</h1>
 
       <div className="RadarChart">
-        <RadarChart
-          captions={captions}
-          data={data}
-          size={450}
-        />
+        <RadarChart captions={captions} data={data} size={450} />
       </div>
 
-      {
-        scrollDownArrow
-          ? <div className="arrow"><ScrollDownArrow target={target} /></div> : null
-      }
+      {scrollDownArrow ? (
+        <div className="arrow">
+          <ScrollDownArrow target={target} />
+        </div>
+      ) : null}
     </div>
   );
 };

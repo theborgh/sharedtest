@@ -1,86 +1,71 @@
-import React, { Component } from 'react';
-import './LearningPage.scss';
-import PropTypes from 'prop-types';
-import { learned, learning } from './data';
-import ScrollDownArrow from '../../components/ScrollDownArrow/ScrollDownArrow';
-import LearningResource from '../../components/LearningResource/LearningResource';
+import React from "react";
+import "./LearningPage.scss";
+import PropTypes from "prop-types";
+import { learned, learning } from "./learningData";
+import ScrollDownArrow from "../../components/ScrollDownArrow/ScrollDownArrow";
+import LearningResource from "../../components/LearningResource/LearningResource";
 
-class LearningPage extends Component {
-  constructor(props) {
-    super(props);
-    const { scrollDownArrow, target } = this.props;
-    this.state = {
-      scrollDownArrow,
-      target,
-    };
-  }
+const LearningPage = ({ scrollDownArrow, target }) => {
+  LearningPage.propTypes = {
+    scrollDownArrow: PropTypes.bool,
+    target: PropTypes.string.isRequired
+  };
 
-  render() {
-    const { scrollDownArrow, target } = this.state;
-    return (
-      <div id="learning" className="LearningPage">
-        <h1>Learning page</h1>
-        <p>
-          Continuing education is an essential requirement for software developers,
-          moreso in the rapidly evolving world of frontend development. This is what&#39;s
-          currently on my map:
-        </p>
-        <h2>Best things I learned:</h2>
-        <ul>
-          {
-            learned.map(el => (
-              <LearningResource
-                key={el.name}
-                name={el.name}
-                description={el.description}
-                skills={el.skills}
-              />
-            ))
-          }
-        </ul>
+  LearningPage.defaultProps = {
+    scrollDownArrow: false
+  };
 
-        <h2>Now learning:</h2>
-        <ul>
-          {
-            learning.map(el => (
-              <LearningResource
-                key={el.name}
-                name={el.name}
-                description={el.description}
-              />
-            ))
-          }
+  return (
+    <div id="learning" className="LearningPage">
+      <h1>Learning page</h1>
+      <p>
+        Continuing education is an essential requirement for software
+        developers, moreso in the rapidly evolving world of frontend
+        development. This is what&#39;s currently on my map:
+      </p>
+      <h2>Best things I learned:</h2>
+      <ul>
+        {learned.map(el => (
+          <LearningResource
+            key={el.name}
+            name={el.name}
+            description={el.description}
+            skills={el.skills}
+          />
+        ))}
+      </ul>
 
-          <li>Material UI</li>
-          <li>Next.js</li>
-          <li>Udemy courses</li>
-          <li>GraphQL</li>
-          <li>Docker</li>
-        </ul>
+      <h2>Now learning:</h2>
+      <ul>
+        {learning.map(el => (
+          <LearningResource
+            key={el.name}
+            name={el.name}
+            description={el.description}
+          />
+        ))}
 
-        <h2>Wishlist:</h2>
-        <ul>
-          <li>The Clean Coder</li>
-          <li>Clean Code</li>
-          <li>Alg & Data Structures</li>
-          <li>AirBnb Style guide</li>
-        </ul>
-        {
-          scrollDownArrow
-            ? <div className="arrow"><ScrollDownArrow target={target} /></div> : null
-        }
-      </div>
-    );
-  }
-}
+        <li>Material UI</li>
+        <li>Next.js</li>
+        <li>Udemy courses</li>
+        <li>GraphQL</li>
+        <li>Docker</li>
+      </ul>
 
-LearningPage.propTypes = {
-  scrollDownArrow: PropTypes.bool,
-  target: PropTypes.string.isRequired,
-};
-
-LearningPage.defaultProps = {
-  scrollDownArrow: false,
+      <h2>Wishlist:</h2>
+      <ul>
+        <li>The Clean Coder</li>
+        <li>Clean Code</li>
+        <li>Alg & Data Structures</li>
+        <li>AirBnb Style guide</li>
+      </ul>
+      {scrollDownArrow ? (
+        <div className="arrow">
+          <ScrollDownArrow target={target} />
+        </div>
+      ) : null}
+    </div>
+  );
 };
 
 export default LearningPage;
