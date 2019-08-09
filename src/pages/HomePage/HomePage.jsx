@@ -19,8 +19,8 @@ const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
 
   return (
     <div id="home" className="LandingPage">
-      <h1>Dario Borghino</h1>
-      <h2>Front-end Developer</h2>
+      <h1 className="name">Dario Borghino</h1>
+      <h2 className="title">Front-end Developer</h2>
       <ul className="social">
         <li>
           <a href="https://github.com/theborgh">
@@ -45,7 +45,7 @@ const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
       </ul>
       {scrollDownArrow ? (
         <div className="arrow">
-          <ScrollDownArrow target={scrollDownTarget} />
+          <ScrollDownArrow target={scrollDownTarget} fadeIn />
         </div>
       ) : null}
     </div>

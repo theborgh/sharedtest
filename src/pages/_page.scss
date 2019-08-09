@@ -1,4 +1,4 @@
-@mixin pagebase {  
+@mixin pagebase {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -9,6 +9,7 @@
   h1 {
     font-size: 3rem;
     text-align: center;
+    margin-top: 20px;
   }
 
   p {

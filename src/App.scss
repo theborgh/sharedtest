@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   background-color: white;
   min-height: 100vh;
@@ -5,5 +11,10 @@
 }
 
 body {
-  overflow-x:hidden;  
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7; /* 1.7 times the predifined line height */
+  color: #777;
 }

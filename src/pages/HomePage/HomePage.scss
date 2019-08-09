@@ -20,12 +20,67 @@
   ul {
     text-align: center;
     list-style: none;
-    padding: 0px;
+    margin-top: 50px;
 
     li {
       display: inline-block;
       margin-right: 10px;
       font-size: 1rem;
+      border-radius: 10px;
+    }
+
+    li:hover {
+      background-color: white;
+    }
+  }
+
+  .name {
+    animation-name: FadeInFromRight;
+    animation-duration: 1.8s;
+  }
+
+  .title {
+    animation-name: FadeInFromLeft;
+    animation-duration: 1.8s;
+  }
+
+  .social {
+    animation-name: FadeInFromBottom;
+    animation-duration: 0.7s;
+    animation-delay: 1.8s;
+    animation-fill-mode: backwards;
+  }
+
+  @keyframes FadeInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+  @keyframes FadeInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+  @keyframes FadeInFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
     }
   }
 }

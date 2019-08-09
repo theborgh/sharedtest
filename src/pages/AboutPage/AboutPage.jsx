@@ -18,8 +18,8 @@ const AboutPage = ({ scrollDownArrow, scrollDownTarget }) => {
         publications including Australia-based Gizmag.com (now New Atlas).
       </p>
       <p>
-        As a science and technology journalist I covered a wide range of topics
-        including advancements in transistor technology to&nbsp;
+        In that capacity, I covered a wide range of topics including
+        advancements in transistor technology, &nbsp;
         <a href="https://newatlas.com/driverless-car-ethics/43926/">
           autonomous cars
         </a>
@@ -65,21 +65,18 @@ const AboutPage = ({ scrollDownArrow, scrollDownTarget }) => {
       <p>
         I am very passionate about frontend and eager to learn more every single
         day, whether it&#39;s React, Saga, TDD, Docker, TypeScript, performance,
-        or accessibility.
-      </p>
-      <p>
-        When I&#39;m not coding and practising on my projects, I listen to
-        podcasts like Software Engineering Daily, React Roundup, JS Jabber. I'm
-        also{" "}
+        or accessibility. When I&#39;m not coding and practising on my projects,
+        I listen to podcasts like Software Engineering Daily, React Roundup, JS
+        Jabber. I'm also{" "}
         <a href="https://developer.mozilla.org/it/profiles/theborgh">
           contributing translations
         </a>{" "}
         to the MDN Web Docs.
       </p>
       <p>
-        My experience may be limited, but my educational background means I am
-        able to pick up new concepts very quickly, with an emphasis on how
-        things work under the hood.
+        My professional programming experience may be limited, but my
+        educational background means I am able to pick up new concepts very
+        quickly, with an emphasis on how things work under the hood.
       </p>
 
       {scrollDownArrow ? (
