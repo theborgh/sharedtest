@@ -23,6 +23,23 @@ const LearningPage = ({ scrollDownArrow, scrollDownTarget }) => {
         developers, moreso in the rapidly evolving world of frontend
         development. This is what&#39;s currently on my map:
       </p>
+      <h2>Now learning:</h2>
+      <ul>
+        {learning.map(el => (
+          <LearningResource
+            key={el.name}
+            name={el.name}
+            description={el.description}
+            backgroundImage={el.backgroundImage}
+          />
+        ))}
+
+        <li>Material UI</li>
+        <li>Next.js</li>
+        <li>Udemy courses</li>
+        <li>GraphQL</li>
+        <li>Docker</li>
+      </ul>
       <h2>Best things I learned:</h2>
       <ul>
         {learned.map(el => (
@@ -33,23 +50,6 @@ const LearningPage = ({ scrollDownArrow, scrollDownTarget }) => {
             skills={el.skills}
           />
         ))}
-      </ul>
-
-      <h2>Now learning:</h2>
-      <ul>
-        {learning.map(el => (
-          <LearningResource
-            key={el.name}
-            name={el.name}
-            description={el.description}
-          />
-        ))}
-
-        <li>Material UI</li>
-        <li>Next.js</li>
-        <li>Udemy courses</li>
-        <li>GraphQL</li>
-        <li>Docker</li>
       </ul>
 
       <h2>Wishlist:</h2>
