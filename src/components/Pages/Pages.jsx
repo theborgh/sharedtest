@@ -1,5 +1,4 @@
 import React from "react";
-import "./Pages.scss";
 import HomePage from "../../pages/HomePage/HomePage";
 import AboutPage from "../../pages/AboutPage/AboutPage";
 import SkillsPage from "../../pages/SkillsPage/SkillsPage";

@@ -7,7 +7,7 @@
 
   h1 {
     text-align: center;
-    padding-top: 150px;
+    padding-top: 15rem;
     text-transform: uppercase;
     font-size: 2rem;
   }
@@ -20,13 +20,13 @@
   ul {
     text-align: center;
     list-style: none;
-    margin-top: 50px;
+    margin-top: 5rem;
 
     li {
       display: inline-block;
-      margin-right: 10px;
+      margin-right: 1rem;
       font-size: 1rem;
-      border-radius: 10px;
+      border-radius: 1rem;
     }
 
     li:hover {
@@ -54,7 +54,7 @@
   @keyframes FadeInFromRight {
     0% {
       opacity: 0;
-      transform: translateX(100px);
+      transform: translateX(10rem);
     }
     100% {
       opacity: 1;
@@ -65,7 +65,7 @@
   @keyframes FadeInFromLeft {
     0% {
       opacity: 0;
-      transform: translateX(-100px);
+      transform: translateX(-10rem);
     }
     100% {
       opacity: 1;
@@ -76,7 +76,7 @@
   @keyframes FadeInFromBottom {
     0% {
       opacity: 0;
-      transform: translateY(50px);
+      transform: translateY(5rem);
     }
     100% {
       opacity: 1;

@@ -1,7 +1,7 @@
 @mixin pagebase {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   color: rgba(56, 100, 122, 1);
   background-color: azure;
   margin-bottom: 0;
@@ -9,23 +9,23 @@
   h1 {
     font-size: 3rem;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 2rem;
   }
 
   p {
     font-size: 1.5rem;
     text-align: justify;
     margin: {
-      left: 20px;
-      right: 20px;
+      left: 2rem;
+      right: 2rem;
       top: 0px;
-      bottom: 10px;
+      bottom: 1rem;
     }
   }
 
   .arrow {
     margin-top: auto;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
 }
