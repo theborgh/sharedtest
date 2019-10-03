@@ -48,20 +48,17 @@ const AboutPage = ({ scrollDownArrow, scrollDownTarget }) => {
         <a href="https://newatlas.com/laptops-history-35-years/42566/">
           Alan Kay
         </a>
-        , a&nbsp;
+        &nbsp; and&nbsp;
         <a href="https://newatlas.com/james-webb-space-telescope/36706/">
-          Nobel prize winner
+          Nobel prize winners
         </a>
-        , and other prominent researchers. This experience has helped me develop
-        outstanding research skills, self reliance, attention to detail, the
-        ability to work under tight deadlines, and an attitude that values and
-        welcomes criticism (&quot;no mistake I make is too small to point
-        out,&quot; as I told my editors).
+        . This experience has helped me develop outstanding research skills,
+        self reliance, attention to detail, the ability to work under tight
+        deadlines, and a general attitude that values and welcomes criticism.
       </p>
       <p>
-        As great as that experience was, I have recently redescovered that my
-        true passion is for building software, and it&#39;s felt like coming
-        home. For the past few months I have been focused exclusively on
+        I have recently redescovered that my true passion is for building
+        software. For the past few months I have been focused exclusively on
         learning frontend web development, with an emphasis on Javascript and
         React.js. I love how React and its excellent ecosystem allow me to
         quickly sketch an idea in a modular, declarative and performant way
@@ -71,17 +68,17 @@ const AboutPage = ({ scrollDownArrow, scrollDownTarget }) => {
       <p>
         I am eager to learn more about web development every day, whether
         it&#39;s technologies like React.js, TypeScript, SCSS, testing
-        libraries, or more general considerations on code maintainability,
-        performance, and accessibility. When not coding or working on my
-        projects, I listen to podcasts and contribute Italian translations to
-        the MDN Web Docs. I&#39;m currently looking to join a big open-source
-        project so I can practice working on large, unfamiliar codebases.
+        libraries, or considerations on code maintainability, performance, and
+        accessibility. When not working on my projects, I listen to webdev
+        podcasts and contribute Italian translations to the MDN Web Docs.
+        I&#39;m also looking to join a big open-source project so I can practice
+        working on large, unfamiliar codebases.
       </p>
       <p>
-        Although my professional programming experience may be limited, I
-        believe that my educational background means I am able to pick up new
-        concepts very quickly, with an emphasis on understanding how things work
-        under the hood.
+        My professional programming experience may be limited, but I believe
+        that my educational background means I am able to pick up new concepts
+        very quickly, with an emphasis on understanding how things work under
+        the hood.
       </p>
 
       {scrollDownArrow ? (
