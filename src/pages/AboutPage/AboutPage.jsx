@@ -71,12 +71,11 @@ const AboutPage = ({ scrollDownArrow, scrollDownTarget }) => {
       <p>
         I am eager to learn more about web development every day, whether
         it&#39;s technologies like React.js, TypeScript, SCSS, testing
-        libraries, or more general considerations on performance, accessibility
-        and maintainability. When I&#39;m not coding or working on my projects,
-        I listen to webdev-related podcasts and contribute Italian translations
-        to the MDN Web Docs. I&#39;m currently looking for large open-source
-        projects that I can contribute to in order to practice working on large,
-        unfamiliar codebases.
+        libraries, or more general considerations on code maintainability,
+        performance, and accessibility. When not coding or working on my
+        projects, I listen to podcasts and contribute Italian translations to
+        the MDN Web Docs. I&#39;m currently looking to join a big open-source
+        project so I can practice working on large, unfamiliar codebases.
       </p>
       <p>
         Although my professional programming experience may be limited, I

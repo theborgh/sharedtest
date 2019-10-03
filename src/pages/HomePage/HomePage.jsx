@@ -23,22 +23,22 @@ const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
       <h2 className="title">Front-end Developer</h2>
       <ul className="social">
         <li>
-          <a href="https://github.com/DarioBorghino">
+          <a href="https://github.com/theborgh">
             <GithubLogo />
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/">
+          <a href="https://www.linkedin.com/in/darioborghino/">
             <LinkedinLogo />
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/the_borgh">
+          <a href="https://twitter.com/DarioBorghino">
             <TwitterLogo />
           </a>
         </li>
         <li>
-          <a href="https://medium.com/@the_borgh_88758">
+          <a href="https://medium.com/@the_borgh">
             <MediumLogo />
           </a>
         </li>

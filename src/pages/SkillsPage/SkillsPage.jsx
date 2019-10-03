@@ -18,12 +18,12 @@ const SkillsPage = ({ scrollDownArrow, scrollDownTarget }) => {
     {
       data: {
         javascript: 0.9,
-        react: 0.77,
-        redux: 0.7,
+        react: 0.82,
+        redux: 0.74,
         responsive: 0.8,
         testing: 0.82,
         css: 0.8,
-        typescript: 0.82
+        typescript: 0.77
       },
       meta: { color: "rgba(56, 100, 122, 1)" }
     }
