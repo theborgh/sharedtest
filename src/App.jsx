@@ -8,7 +8,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      pages: ["Home", "About", "Skills", "Learning", "Projects"]
+      pages: ["Home", "About", "Skills", "Projects"]
     };
   }
 

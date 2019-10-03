@@ -17,26 +17,26 @@ const SkillsPage = ({ scrollDownArrow, scrollDownTarget }) => {
   const data = [
     {
       data: {
-        react: 0.7,
-        javascript: 0.8,
-        redux: 0.9,
-        testing: 0.67,
-        english: 0.95,
-        css: 0.75,
-        responsive: 0.8
+        javascript: 0.9,
+        react: 0.77,
+        redux: 0.7,
+        responsive: 0.8,
+        testing: 0.82,
+        css: 0.8,
+        typescript: 0.82
       },
       meta: { color: "rgba(56, 100, 122, 1)" }
     }
   ];
 
   const captions = {
-    react: "React",
     javascript: "Javascript",
+    react: "React.js",
     redux: "Redux",
-    testing: "Testing",
-    english: "English",
-    css: "CSS",
-    responsive: "Responsive design"
+    responsive: "Responsive design",
+    testing: "Testing (Jest/Enzyme)",
+    css: "CSS/SCSS",
+    typescript: "Typescript"
   };
 
   return (
