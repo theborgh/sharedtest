@@ -1,5 +1,11 @@
-@import '../page.scss';
+@import "../page.scss";
 
 .ProjectsPage {
   @include pagebase;
+
+  ul {
+    font-size: 1.5rem;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+  }
 }
