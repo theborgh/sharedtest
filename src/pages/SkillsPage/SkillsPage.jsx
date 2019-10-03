@@ -29,7 +29,7 @@ const SkillsPage = ({ scrollDownArrow, scrollDownTarget }) => {
         redux: 0.74,
         responsive: 0.8,
         testing: 0.82,
-        css: 0.8,
+        scss: 0.8,
         typescript: 0.77
       },
       meta: { color: "rgba(56, 100, 122, 1)" }
@@ -42,7 +42,7 @@ const SkillsPage = ({ scrollDownArrow, scrollDownTarget }) => {
     redux: "Redux",
     responsive: "Responsive design",
     testing: "Testing (Jest/Enzyme)",
-    css: "CSS/SCSS",
+    scss: "SCSS",
     typescript: "Typescript"
   };
 
