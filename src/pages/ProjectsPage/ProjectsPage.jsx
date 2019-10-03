@@ -16,8 +16,8 @@ const ProjectsPage = ({ scrollDownArrow }) => {
     <div id="projects" className="ProjectsPage">
       <h1>Projects</h1>
       <p>
-        Under construction! In the meantime, please check these github repos of
-        mine:
+        This section is under construction! In the meantime, please check these
+        github repos of mine:
       </p>
 
       <ul>
@@ -44,11 +44,13 @@ const ProjectsPage = ({ scrollDownArrow }) => {
       <p>
         I&#39;m also in the process of developing a big personal project: a
         full-stack, fully featured Not-Your-Typical-Todo-App to collect,
-        organize, schedule and track your todos stress-free. The tech stack
-        includes React.js, Typescript, SCSS, Jest and Enzyme on the frontend,
-        and Node/Express on the backend. However, this project is in its very
-        early stages. I will post more info as soon as I have enough code to be
-        worth showing.
+        organize, prioritize and track your todos in a stress-free way
+        implementing David Allen&#39;s{" "}
+        <a href="https://gettingthingsdone.com/">Getting Things Done</a> task
+        management system. The stack I chose includes React.js, Typescript,
+        SCSS, Jest and Enzyme on the frontend, and Node/Express on the backend.
+        This project is in its very early stages, but I&#39;ll be sure to post a
+        link to the code as soon as it becomes worth showing.
       </p>
       {/* <ul>
         {projects.map(proj => (

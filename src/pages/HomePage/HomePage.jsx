@@ -5,7 +5,7 @@ import ScrollDownArrow from "../../components/ScrollDownArrow/ScrollDownArrow";
 import { ReactComponent as GithubLogo } from "../../assets/githubLogo.svg";
 import { ReactComponent as LinkedinLogo } from "../../assets/linkedinLogo.svg";
 import { ReactComponent as TwitterLogo } from "../../assets/twitterLogo.svg";
-import { ReactComponent as MediumLogo } from "../../assets/mediumLogo.svg";
+// import { ReactComponent as MediumLogo } from "../../assets/mediumLogo.svg";
 
 const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
   LandingPage.propTypes = {
@@ -21,28 +21,28 @@ const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
     <div id="home" className="LandingPage">
       <h1 className="name">Dario Borghino</h1>
       <h2 className="title">Front-end Developer</h2>
-      <ul className="social">
-        <li>
+      <div className="social">
+        <div className="social-logo">
           <a href="https://github.com/theborgh">
             <GithubLogo />
           </a>
-        </li>
-        <li>
+        </div>
+        <div className="social-logo">
           <a href="https://www.linkedin.com/in/darioborghino/">
             <LinkedinLogo />
           </a>
-        </li>
-        <li>
+        </div>
+        <div className="social-logo">
           <a href="https://twitter.com/DarioBorghino">
             <TwitterLogo />
           </a>
-        </li>
-        <li>
+        </div>
+        {/* <li>
           <a href="https://medium.com/@the_borgh">
             <MediumLogo />
           </a>
-        </li>
-      </ul>
+        </li> */}
+      </div>
       {scrollDownArrow ? (
         <div className="arrow">
           <ScrollDownArrow target={scrollDownTarget} fadeIn />

@@ -7,7 +7,7 @@
 
   h1 {
     text-align: center;
-    padding-top: 15rem;
+    padding-top: 10rem;
     text-transform: uppercase;
     font-size: 2rem;
   }
@@ -45,6 +45,15 @@
     animation-duration: 0.7s;
     animation-delay: 1.8s;
     animation-fill-mode: backwards;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-logo {
+      display: inline-block;
+      padding: 2rem;
+    }
   }
 
   @keyframes FadeInFromRight {
@@ -88,7 +97,7 @@
 @media only screen and (min-width: 320px) {
   .LandingPage {
     h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
 
     h2 {

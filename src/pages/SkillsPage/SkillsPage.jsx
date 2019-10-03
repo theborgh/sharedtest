@@ -5,6 +5,13 @@ import RadarChart from "react-svg-radar-chart";
 import ScrollDownArrow from "../../components/ScrollDownArrow/ScrollDownArrow";
 import "react-svg-radar-chart/build/css/index.css";
 
+const getRadarChartSize = () => {
+  const { innerWidth } = window;
+  const MAX_RADAR_CHART_WIDTH_PX = 500;
+
+  return Math.min(innerWidth * 0.8, MAX_RADAR_CHART_WIDTH_PX);
+};
+
 const SkillsPage = ({ scrollDownArrow, scrollDownTarget }) => {
   SkillsPage.propTypes = {
     scrollDownArrow: PropTypes.bool,
@@ -44,7 +51,11 @@ const SkillsPage = ({ scrollDownArrow, scrollDownTarget }) => {
       <h1>Skills</h1>
 
       <div className="RadarChart">
-        <RadarChart captions={captions} data={data} size={450} />
+        <RadarChart
+          captions={captions}
+          data={data}
+          size={getRadarChartSize()}
+        />
       </div>
 
       {scrollDownArrow ? (
