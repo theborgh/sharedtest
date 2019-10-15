@@ -12,7 +12,7 @@
     right: 3rem;
     border-radius: 50%;
     z-index: 16;
-    box-shadow: 0 1rem 1rem rgba(black, 0.1);
+    box-shadow: 0.5rem 0.5rem 1rem rgba(black, 0.2);
   }
 
   &__background {
@@ -24,17 +24,21 @@
     right: 3rem;
     background-image: radial-gradient(blue, yellow);
     z-index: 10;
+
+    transition: transform 0.5s;
   }
 
   &__nav {
     height: 100vh;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 15;
 
     opacity: 0;
     width: 0;
+
+    transition: all 0.5s;
   }
 
   &__list {
@@ -44,6 +48,7 @@
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
+    width: 100%;
   }
 
   &__item {

@@ -1,8 +1,15 @@
 @import "../page";
 
+$color-primary: #2325aa;
+$color-primary-light: #6c6ad8;
+$color-primary-dark: #1336ac;
+
 .LandingPage {
   @include pagebase;
-  background-color: rgba(56, 100, 122, 1);
+  background-image: linear-gradient(
+    $color-primary-light,
+    $color-primary-dark
+  ); // rgba(56, 100, 122, 1);
   color: azure;
 
   h1 {
