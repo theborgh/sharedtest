@@ -1,6 +1,10 @@
 import React from "react";
 import "./Navigation.scss";
 
+const closeNav = () => {
+  document.getElementById("navi-toggle").checked = false;
+};
+
 export default function Navigation() {
   return (
     <div className="navigation">
@@ -10,7 +14,7 @@ export default function Navigation() {
         className="navigation__checkbox"
       />
       <label htmlFor="navi-toggle" className="navigation__button">
-        MENU
+        <span className="navigation__icon">&nbsp;</span>
       </label>
 
       <div className="navigation__background">&nbsp;</div>
@@ -18,22 +22,22 @@ export default function Navigation() {
       <nav className="navigation__nav">
         <ul className="navigation__list">
           <li className="navigation__item">
-            <a href="#top" className="navigation__link">
+            <a href="#top" className="navigation__link" onClick={closeNav}>
               Home
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#about" className="navigation__link">
+            <a href="#about" className="navigation__link" onClick={closeNav}>
               About
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#skills" className="navigation__link">
+            <a href="#skills" className="navigation__link" onClick={closeNav}>
               Skills
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#projects" className="navigation__link">
+            <a href="#projects" className="navigation__link" onClick={closeNav}>
               Projects
             </a>
           </li>

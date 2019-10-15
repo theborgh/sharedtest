@@ -13,6 +13,9 @@
     border-radius: 50%;
     z-index: 16;
     box-shadow: 0.5rem 0.5rem 1rem rgba(black, 0.2);
+
+    text-align: center;
+    cursor: pointer;
   }
 
   &__background {
@@ -84,6 +87,8 @@
     }
   }
 
+  // Checkbox hack (select siblings)
+
   &__checkbox:checked ~ &__background {
     transform: scale(80);
   }
@@ -91,5 +96,62 @@
   &__checkbox:checked ~ &__nav {
     width: 100%;
     opacity: 1;
+  }
+
+  // Hamburger icon
+  &__icon {
+    position: relative;
+    margin-top: 2rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 2rem;
+      height: 2px;
+      background-color: #333;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+
+    &::before {
+      top: -0.7rem;
+    }
+
+    &::after {
+      top: 0.7rem;
+    }
+  }
+
+  // Transform on hover
+
+  &__button:hover &__icon::before {
+    top: -0.8rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 0.8rem;
+  }
+
+  // Transform on click
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
   }
 }
