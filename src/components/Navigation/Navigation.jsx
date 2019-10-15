@@ -4,13 +4,13 @@ import "./Navigation.scss";
 export default function Navigation() {
   return (
     <div className="navigation">
-      <label htmlFor="navi-toggle" className="navigation__button" id="">
+      <input
+        type="checkbox"
+        id="navi-toggle"
+        className="navigation__checkbox"
+      />
+      <label htmlFor="navi-toggle" className="navigation__button">
         MENU
-        <input
-          type="checkbox"
-          id="navi-toggle"
-          className="navigation__checkbox"
-        />
       </label>
 
       <div className="navigation__background">&nbsp;</div>
