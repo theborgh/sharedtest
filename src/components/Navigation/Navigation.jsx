@@ -1,9 +1,9 @@
 import React from "react";
+import "./Navigation.scss";
 
 export default function Navigation() {
   return (
     <div className="navigation">
-      <h1>Navigation</h1>
       <label htmlFor="navi-toggle" className="navigation__button" id="">
         MENU
         <input
@@ -33,7 +33,7 @@ export default function Navigation() {
             </a>
           </li>
           <li className="navigation__item">
-            <a href="projects#" className="navigation__link">
+            <a href="#projects" className="navigation__link">
               Projects
             </a>
           </li>
