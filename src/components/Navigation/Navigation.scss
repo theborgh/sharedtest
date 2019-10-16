@@ -155,3 +155,10 @@
     transform: rotate(-135deg);
   }
 }
+
+// Hide nav button on mobile
+@media only screen and (max-width: 420px) {
+  .navigation {
+    display: none;
+  }
+}
