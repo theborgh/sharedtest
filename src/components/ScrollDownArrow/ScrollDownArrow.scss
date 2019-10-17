@@ -32,3 +32,9 @@
     transform: translateY(-2rem);
   }
 }
+
+@media only screen and (min-width: 421px) {
+  .ScrollDownArrow {
+    display: none;
+  }
+}
