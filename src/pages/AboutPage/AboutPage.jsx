@@ -66,15 +66,6 @@ const AboutPage = ({ scrollDownArrow, scrollDownTarget }) => {
         matter of minutes, across platforms and for the entire world to see.
       </p>
       <p>
-        I am eager to learn more about web development every day, whether
-        it&#39;s technologies like React.js, TypeScript, SCSS, testing
-        libraries, or considerations on code maintainability, performance, and
-        accessibility. When not working on my projects, I listen to webdev
-        podcasts and contribute Italian translations to the MDN Web Docs.
-        I&#39;m also looking to join a big open-source project so I can practice
-        working on large, unfamiliar codebases.
-      </p>
-      <p>
         My professional programming experience may be limited, but I believe
         that my educational background means I am able to pick up new concepts
         very quickly, with an emphasis on understanding how things work under
