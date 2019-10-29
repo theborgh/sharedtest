@@ -5,6 +5,7 @@ import ScrollDownArrow from "../../components/ScrollDownArrow/ScrollDownArrow";
 import { ReactComponent as GithubLogo } from "../../assets/githubLogo.svg";
 import { ReactComponent as LinkedinLogo } from "../../assets/linkedinLogo.svg";
 import { ReactComponent as TwitterLogo } from "../../assets/twitterLogo.svg";
+import { ReactComponent as MDNLogo } from "../../assets/mdnLogo.svg";
 // import { ReactComponent as MediumLogo } from "../../assets/mediumLogo.svg";
 
 const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
@@ -35,6 +36,11 @@ const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
         <div className="social-logo">
           <a href="https://twitter.com/DarioBorghino">
             <TwitterLogo />
+          </a>
+        </div>
+        <div className="social-logo">
+          <a href="https://wiki.developer.mozilla.org/en-US/profiles/theborgh">
+            <MDNLogo />
           </a>
         </div>
         {/* <li>

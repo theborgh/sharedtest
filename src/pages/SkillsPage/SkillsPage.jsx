@@ -41,7 +41,7 @@ const SkillsPage = ({ scrollDownArrow, scrollDownTarget }) => {
     react: "React.js",
     redux: "Redux",
     responsive: "Responsive design",
-    testing: "Testing (Jest/Enzyme)",
+    testing: "Testing",
     scss: "SCSS",
     typescript: "Typescript"
   };

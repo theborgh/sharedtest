@@ -6,17 +6,13 @@ $color-primary-dark: #1336ac;
 
 .LandingPage {
   @include pagebase;
-  background-image: linear-gradient(
-    $color-primary-light,
-    $color-primary-dark
-  ); // rgba(56, 100, 122, 1);
+  background-image: linear-gradient($color-primary-light, $color-primary-dark);
   color: azure;
 
   h1 {
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 12rem;
     text-transform: uppercase;
-    font-size: 2rem;
   }
 
   h2 {
@@ -38,16 +34,20 @@ $color-primary-dark: #1336ac;
   }
 
   .name {
+    font-size: 5rem;
     animation-name: FadeInFromRight;
     animation-duration: 1.8s;
   }
 
   .title {
+    font-size: 3rem;
     animation-name: FadeInFromLeft;
     animation-duration: 1.8s;
   }
 
   .social {
+    margin-top: 1.5rem;
+
     animation-name: FadeInFromBottom;
     animation-duration: 0.7s;
     animation-delay: 1.8s;
@@ -60,6 +60,11 @@ $color-primary-dark: #1336ac;
     &-logo {
       display: inline-block;
       padding: 2rem;
+
+      svg {
+        width: 60px;
+        height: 60px;
+      }
     }
   }
 
@@ -103,11 +108,11 @@ $color-primary-dark: #1336ac;
 // Phone (landscape or > iPhone 5)
 @media only screen and (min-width: 320px) {
   .LandingPage {
-    h1 {
+    .name {
       font-size: 2rem;
     }
 
-    h2 {
+    .title {
       font-size: 1.6rem;
     }
   }
@@ -116,11 +121,11 @@ $color-primary-dark: #1336ac;
 // Tablet (portrait)
 @media only screen and (min-width: 580px) {
   .LandingPage {
-    h1 {
+    .name {
       font-size: 2.8rem;
     }
 
-    h2 {
+    .title {
       font-size: 1.8rem;
     }
   }
@@ -129,11 +134,11 @@ $color-primary-dark: #1336ac;
 // Tablet (landscape)
 @media only screen and (min-width: 768px) {
   .LandingPage {
-    h1 {
+    .name {
       font-size: 3.4rem;
     }
 
-    h2 {
+    .title {
       font-size: 2.1rem;
     }
   }
@@ -142,11 +147,11 @@ $color-primary-dark: #1336ac;
 // Desktop
 @media only screen and (min-width: 1024px) {
   .LandingPage {
-    h1 {
+    .name {
       font-size: 3.8rem;
     }
 
-    h2 {
+    .title {
       font-size: 2.5rem;
     }
 
@@ -159,11 +164,11 @@ $color-primary-dark: #1336ac;
 // 4K
 @media only screen and (min-width: 2160px) {
   .LandingPage {
-    h1 {
+    .name {
       font-size: 7rem;
     }
 
-    h2 {
+    .title {
       font-size: 4rem;
     }
   }
