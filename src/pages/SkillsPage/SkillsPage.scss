@@ -6,19 +6,15 @@
   .RadarChart {
     display: flex;
     justify-content: center;
-    width: 100%;
-  }
-}
 
-// Phone (landscape or > iPhone 5)
-@media only screen and (min-width: 320px) {
-  .AboutPage {
-    h1 {
-      font-size: 2.5rem;
-    }
+    svg {
+      margin-top: 3rem;
+      justify-content: center;
+      width: 90%;
 
-    h2 {
-      font-size: 1.6rem;
+      g text {
+        font-size: 1rem;
+      }
     }
   }
 }

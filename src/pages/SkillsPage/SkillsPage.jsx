@@ -25,9 +25,9 @@ const SkillsPage = ({ scrollDownArrow, scrollDownTarget }) => {
     {
       data: {
         javascript: 0.9,
-        react: 0.82,
-        redux: 0.74,
-        responsive: 0.8,
+        react: 0.84,
+        redux: 0.76,
+        responsive: 0.82,
         testing: 0.82,
         scss: 0.8,
         typescript: 0.77
@@ -37,13 +37,13 @@ const SkillsPage = ({ scrollDownArrow, scrollDownTarget }) => {
   ];
 
   const captions = {
-    javascript: "Javascript",
+    javascript: "JavaScript",
     react: "React.js",
     redux: "Redux",
     responsive: "Responsive design",
-    testing: "Testing (Jest/Enzyme)",
+    testing: "Testing",
     scss: "SCSS",
-    typescript: "Typescript"
+    typescript: "TypeScript"
   };
 
   return (

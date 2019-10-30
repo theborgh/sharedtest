@@ -5,6 +5,7 @@ import ScrollDownArrow from "../../components/ScrollDownArrow/ScrollDownArrow";
 import { ReactComponent as GithubLogo } from "../../assets/githubLogo.svg";
 import { ReactComponent as LinkedinLogo } from "../../assets/linkedinLogo.svg";
 import { ReactComponent as TwitterLogo } from "../../assets/twitterLogo.svg";
+import { ReactComponent as MDNLogo } from "../../assets/mdnLogo.svg";
 // import { ReactComponent as MediumLogo } from "../../assets/mediumLogo.svg";
 
 const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
@@ -21,6 +22,7 @@ const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
     <div id="home" className="LandingPage">
       <h1 className="name">Dario Borghino</h1>
       <h2 className="title">Front-end Developer</h2>
+
       <div className="social">
         <div className="social-logo">
           <a href="https://github.com/theborgh">
@@ -37,12 +39,18 @@ const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
             <TwitterLogo />
           </a>
         </div>
+        <div className="social-logo">
+          <a href="https://wiki.developer.mozilla.org/en-US/profiles/theborgh">
+            <MDNLogo />
+          </a>
+        </div>
         {/* <li>
           <a href="https://medium.com/@the_borgh">
             <MediumLogo />
           </a>
         </li> */}
       </div>
+
       {scrollDownArrow ? (
         <div className="arrow">
           <ScrollDownArrow target={scrollDownTarget} fadeIn />
