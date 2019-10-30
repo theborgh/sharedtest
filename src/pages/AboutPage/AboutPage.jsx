@@ -54,31 +54,23 @@ const AboutPage = ({ scrollDownArrow, scrollDownTarget }) => {
         </a>
         . This experience has helped me develop outstanding research skills,
         self reliance, attention to detail, the ability to work under tight
-        deadlines, and a general attitude that values and welcomes criticism.
+        deadlines, and a general attitude that values and welcomes criticism
+        toward my work.
       </p>
       <p>
         I have recently redescovered that my true passion is for building
         software. For the past few months I have been focused exclusively on
-        learning frontend web development, with an emphasis on Javascript and
+        learning frontend web development, with an emphasis on JavaScript and
         React.js. I love how React and its excellent ecosystem allow me to
         quickly sketch an idea in a modular, declarative and performant way
         &mdash; and how third-party tools then let me deploy my projects in a
         matter of minutes, across platforms and for the entire world to see.
       </p>
       <p>
-        I am eager to learn more about web development every day, whether
-        it&#39;s technologies like React.js, TypeScript, SCSS, testing
-        libraries, or considerations on code maintainability, performance, and
-        accessibility. When not working on my projects, I listen to webdev
-        podcasts and contribute Italian translations to the MDN Web Docs.
-        I&#39;m also looking to join a big open-source project so I can practice
-        working on large, unfamiliar codebases.
-      </p>
-      <p>
-        My professional programming experience may be limited, but I believe
-        that my educational background means I am able to pick up new concepts
-        very quickly, with an emphasis on understanding how things work under
-        the hood.
+        While my professional programming experience may be limited, my
+        educational background allows me to pick up new technical concepts
+        quickly and deeply, with an emphasis on understanding how things work
+        under the hood.
       </p>
 
       {scrollDownArrow ? (
