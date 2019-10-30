@@ -25,7 +25,7 @@ const ProjectsPage = ({ scrollDownArrow }) => {
           <a href="https://github.com/theborgh/clothing-store">
             Clothing store
           </a>
-          : An online clothing shop in React.js/Redux/Firebase
+          : An online clothing shop in React.js, Redux, Firebase
         </li>
         <li>
           <a href="https://github.com/theborgh/brainiac">Brainiac</a>: A
