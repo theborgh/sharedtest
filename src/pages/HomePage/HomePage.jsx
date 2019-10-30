@@ -22,6 +22,7 @@ const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
     <div id="home" className="LandingPage">
       <h1 className="name">Dario Borghino</h1>
       <h2 className="title">Front-end Developer</h2>
+
       <div className="social">
         <div className="social-logo">
           <a href="https://github.com/theborgh">
@@ -49,6 +50,7 @@ const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
           </a>
         </li> */}
       </div>
+
       {scrollDownArrow ? (
         <div className="arrow">
           <ScrollDownArrow target={scrollDownTarget} fadeIn />

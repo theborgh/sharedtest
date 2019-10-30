@@ -1,8 +1,5 @@
+@import "../constants";
 @import "../page";
-
-$color-primary: #2325aa;
-$color-primary-light: #6c6ad8;
-$color-primary-dark: #1336ac;
 
 .LandingPage {
   @include pagebase;
@@ -11,7 +8,7 @@ $color-primary-dark: #1336ac;
 
   h1 {
     text-align: center;
-    padding-top: 12rem;
+    padding-top: 10rem;
     text-transform: uppercase;
   }
 
@@ -34,13 +31,13 @@ $color-primary-dark: #1336ac;
   }
 
   .name {
-    font-size: 5rem;
+    font-size: 1.5rem;
     animation-name: FadeInFromRight;
     animation-duration: 1.8s;
   }
 
   .title {
-    font-size: 3rem;
+    font-size: 1.2rem;
     animation-name: FadeInFromLeft;
     animation-duration: 1.8s;
   }
@@ -59,11 +56,11 @@ $color-primary-dark: #1336ac;
 
     &-logo {
       display: inline-block;
-      padding: 2rem;
+      padding: 0.5rem;
 
       svg {
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
       }
     }
   }
@@ -115,6 +112,10 @@ $color-primary-dark: #1336ac;
     .title {
       font-size: 1.6rem;
     }
+
+    .social-logo {
+      padding: 1rem;
+    }
   }
 }
 
@@ -135,11 +136,11 @@ $color-primary-dark: #1336ac;
 @media only screen and (min-width: 768px) {
   .LandingPage {
     .name {
-      font-size: 3.4rem;
+      font-size: 3.8rem;
     }
 
     .title {
-      font-size: 2.1rem;
+      font-size: 2.5rem;
     }
   }
 }
@@ -147,16 +148,25 @@ $color-primary-dark: #1336ac;
 // Desktop
 @media only screen and (min-width: 1024px) {
   .LandingPage {
+    h1 {
+      margin-top: 7rem;
+    }
+
     .name {
-      font-size: 3.8rem;
+      font-size: 5rem;
     }
 
     .title {
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
 
-    ul li {
-      font-size: 1.4rem;
+    .social-logo {
+      padding: 2rem;
+
+      svg {
+        width: 60px;
+        height: 60px;
+      }
     }
   }
 }
