@@ -1,16 +1,32 @@
 .Project {
-  border: 2px solid orangered;
+  //border: 2px solid gray;
   width: 800px;
   display: flex;
   margin: 1rem;
+  box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.51);
 
   &-screenshot {
     width: 400px;
     height: 225px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  &-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
   }
 
   &-info {
-    border: 1px solid green;
     margin: 0 0.5rem;
     width: 400px;
   }
@@ -25,14 +41,13 @@
   }
 
   &-stack {
-    border: 1px solid orange;
     display: flex;
     flex-wrap: wrap;
   }
 
   &-tech {
     font-size: 1.2rem;
-    margin: 0 1rem;
+    margin: 0.5rem 1rem;
     border: 1px solid gray;
     border-radius: 5px;
     padding: 0 0.3rem;

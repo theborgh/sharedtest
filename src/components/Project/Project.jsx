@@ -25,15 +25,17 @@ const Project = ({
         className="Project-screenshot"
         style={{
           background: `url(${screenshotUrl})`,
-          backgroundSize: "contain"
+          backgroundSize: "cover"
         }}
       >
-        <a className="Project-link" href={repositoryUrl}>
-          Repository
-        </a>
-        <a className="Project-link" href={liveUrl}>
-          Live version
-        </a>
+        <div className="Project-links">
+          <a className="Project-link" href={repositoryUrl}>
+            Source
+          </a>
+          <a className="Project-link" href={liveUrl}>
+            Live version
+          </a>
+        </div>
       </div>
       <div className="Project-info">
         <div className="Project-name">{name}</div>
