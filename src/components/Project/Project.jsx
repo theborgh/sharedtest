@@ -20,13 +20,34 @@ const Project = ({
   };
 
   return (
-    <div
-      className="Project"
-      style={{ background: `url(${screenshotUrl})`, backgroundSize: "cover" }}
-    >
-      Name: {name}
-      Description: {description}
-      Tech: {techStack ? techStack.map(t => `${t} `) : null}
+    <div className="Project" style={{}}>
+      <div
+        className="Project-screenshot"
+        style={{
+          background: `url(${screenshotUrl})`,
+          backgroundSize: "contain"
+        }}
+      >
+        <a className="Project-link" href={repositoryUrl}>
+          Repository
+        </a>
+        <a className="Project-link" href={liveUrl}>
+          Live version
+        </a>
+      </div>
+      <div className="Project-info">
+        <div className="Project-name">{name}</div>
+        <div className="Project-description">{description}</div>
+        <div className="Project-stack">
+          {techStack
+            ? techStack.map((tech, i) => (
+                <div key={i} className="Project-tech">
+                  {tech}
+                </div>
+              ))
+            : null}
+        </div>
+      </div>
     </div>
   );
 };

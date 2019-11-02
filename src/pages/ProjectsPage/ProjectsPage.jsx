@@ -5,8 +5,6 @@ import ScrollDownArrow from "../../components/ScrollDownArrow/ScrollDownArrow";
 import Project from "../../components/Project/Project";
 import projects from "./projects";
 
-import img from "../../assets/projects/dadjokes.png";
-
 const ProjectsPage = ({ scrollDownArrow }) => {
   ProjectsPage.propTypes = {
     scrollDownArrow: PropTypes.bool
@@ -19,10 +17,6 @@ const ProjectsPage = ({ scrollDownArrow }) => {
   return (
     <div id="projects" className="ProjectsPage">
       <h1>Projects</h1>
-      <p>
-        This section is under construction! In the meantime, please check these
-        github repos of mine:
-      </p>
 
       <ul className="ProjectsContainer">
         {projects.map(project => (
@@ -31,7 +25,7 @@ const ProjectsPage = ({ scrollDownArrow }) => {
             name={project.name}
             description={project.description}
             techStack={project.techStack}
-            screenshotUrl={img}
+            screenshotUrl={project.screenshotUrl}
             repositoryUrl={project.repositoryUrl}
             liveUrl={project.liveUrl}
           />

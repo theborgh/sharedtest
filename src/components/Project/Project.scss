@@ -1,5 +1,44 @@
 .Project {
-  width: 400px;
-  height: 300px;
   border: 2px solid orangered;
+  width: 800px;
+  display: flex;
+  margin: 1rem;
+
+  &-screenshot {
+    width: 400px;
+    height: 225px;
+  }
+
+  &-info {
+    border: 1px solid green;
+    margin: 0 0.5rem;
+    width: 400px;
+  }
+
+  &-name {
+    font-weight: 700;
+  }
+
+  &-description {
+    color: gray;
+    font-size: 1rem;
+  }
+
+  &-stack {
+    border: 1px solid orange;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-tech {
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0 0.3rem;
+
+    &:hover {
+      background: orangered;
+    }
+  }
 }

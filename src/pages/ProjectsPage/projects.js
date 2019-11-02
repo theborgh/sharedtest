@@ -1,9 +1,15 @@
+import paletteMaker from "../../assets/projects/palettemaker.png";
+import dadjokes from "../../assets/projects/dadjokes.png";
+import guesstheword from "../../assets/projects/guesstheword.png";
+import portfolio from "../../assets/projects/portfolio.png";
+
 export default [
   {
     name: "Palette Maker",
-    description: "",
-    techStack: ["React.js", "JSS", "Material-UI"],
-    screenshotUrl: "",
+    description:
+      "SPA that allows users to create color palettes, saving them to localStorage, visualize colors and copy them in hex, rgb, and rgba format with different light levels",
+    techStack: ["React.js", "JSS", "Material-UI", "asdsad", "asd"],
+    screenshotUrl: paletteMaker,
     repositoryUrl: "",
     liveUrl: ""
   },
@@ -12,7 +18,7 @@ export default [
     name: "The Dad Jokes App",
     description: "",
     techStack: ["React.js"],
-    screenshotUrl: "",
+    screenshotUrl: dadjokes,
     repositoryUrl: "",
     liveUrl: ""
   },
@@ -21,7 +27,7 @@ export default [
     name: "Guess the Word",
     description: "",
     techStack: ["React.js", "Jest", "Enzyme"],
-    screenshotUrl: "",
+    screenshotUrl: guesstheword,
     repositoryUrl: "",
     liveUrl: ""
   },
@@ -30,7 +36,7 @@ export default [
     name: "Portfolio",
     description: "",
     techStack: ["React.js"],
-    screenshotUrl: "",
+    screenshotUrl: portfolio,
     repositoryUrl: "",
     liveUrl: ""
   }
