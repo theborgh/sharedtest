@@ -22,7 +22,7 @@ const Project = ({
   };
 
   return (
-    <div className="Project" style={{}}>
+    <div className="Project">
       <div
         className="Project-screenshot"
         style={{
@@ -52,7 +52,7 @@ const Project = ({
       <div className="Project-info">
         <div className="Project-title">
           <div className="Project-name">{name}</div>
-          {workInProgress && <div className="Project-wip">[In progress]</div>}
+          {workInProgress && <div className="Project-wip">[WIP]</div>}
         </div>
         <div className="Project-description">{description}</div>
         <div className="Project-stack">
