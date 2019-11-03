@@ -58,7 +58,7 @@
 
   &-tech {
     font-size: 1.2rem;
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 0.5rem;
     border: 1px solid gray;
     border-radius: 5px;
     padding: 0 0.3rem;
@@ -67,5 +67,45 @@
       color: $color-background;
       background: $color-text;
     }
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .Project {
+    flex-direction: column;
+    width: 400px;
+
+    &-name {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .Project,
+  .Project-screenshot,
+  .Project-description,
+  .Project-stack,
+  .Project-title {
+    width: 350px;
+  }
+
+  .Project-screenshot {
+    height: 197px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .Project,
+  .Project-screenshot,
+  .Project-description,
+  .Project-stack,
+  .Project-title {
+    width: 300px;
+  }
+
+  .Project-screenshot {
+    height: 169px;
   }
 }
