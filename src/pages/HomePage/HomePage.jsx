@@ -2,10 +2,10 @@ import React from "react";
 import "./HomePage.scss";
 import PropTypes from "prop-types";
 import ScrollDownArrow from "../../components/ScrollDownArrow/ScrollDownArrow";
-import { ReactComponent as GithubLogo } from "../../assets/githubLogo.svg";
-import { ReactComponent as LinkedinLogo } from "../../assets/linkedinLogo.svg";
-import { ReactComponent as TwitterLogo } from "../../assets/twitterLogo.svg";
-import { ReactComponent as MDNLogo } from "../../assets/mdnLogo.svg";
+import { ReactComponent as GithubLogo } from "../../assets/logos/github.svg";
+import { ReactComponent as LinkedinLogo } from "../../assets/logos/linkedin.svg";
+import { ReactComponent as TwitterLogo } from "../../assets/logos/twitter.svg";
+import { ReactComponent as MDNLogo } from "../../assets/logos/mdn.svg";
 // import { ReactComponent as MediumLogo } from "../../assets/mediumLogo.svg";
 
 const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
@@ -44,11 +44,6 @@ const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
             <MDNLogo />
           </a>
         </div>
-        {/* <li>
-          <a href="https://medium.com/@the_borgh">
-            <MediumLogo />
-          </a>
-        </li> */}
       </div>
 
       {scrollDownArrow ? (

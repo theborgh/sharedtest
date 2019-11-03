@@ -26,8 +26,8 @@ const SkillsPage = ({ scrollDownArrow, scrollDownTarget }) => {
       data: {
         javascript: 0.9,
         react: 0.84,
-        redux: 0.76,
-        responsive: 0.82,
+        redux: 0.8,
+        responsive: 0.84,
         testing: 0.82,
         scss: 0.8,
         typescript: 0.77

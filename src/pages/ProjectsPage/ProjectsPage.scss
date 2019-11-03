@@ -3,9 +3,13 @@
 .ProjectsPage {
   @include pagebase;
 
-  ul {
+  .ProjectsContainer {
+    margin: 2rem 0;
+
     font-size: 1.5rem;
-    margin-left: 4rem;
-    margin-bottom: 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }

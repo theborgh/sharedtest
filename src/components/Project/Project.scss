@@ -1,0 +1,111 @@
+@import "../../pages/constants";
+
+.Project {
+  width: 800px;
+  display: flex;
+  margin: 1rem;
+  box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.51);
+
+  &-screenshot {
+    width: 400px;
+    height: 225px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  &-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+  }
+
+  &-info {
+    padding: 0 0.5rem;
+    width: 400px;
+  }
+
+  &-title {
+    display: flex;
+  }
+
+  &-name {
+    margin-left: 0.5rem;
+    font-weight: 700;
+  }
+
+  &-wip {
+    font-weight: 700;
+    margin-left: 1rem;
+  }
+
+  &-description {
+    color: gray;
+    font-size: 1rem;
+  }
+
+  &-stack {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-tech {
+    font-size: 1.2rem;
+    margin: 0.5rem 0.5rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0 0.3rem;
+
+    &:hover {
+      color: $color-background;
+      background: $color-text;
+    }
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .Project {
+    flex-direction: column;
+    width: 400px;
+
+    &-name {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .Project,
+  .Project-screenshot,
+  .Project-description,
+  .Project-stack,
+  .Project-title {
+    width: 350px;
+  }
+
+  .Project-screenshot {
+    height: 197px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .Project,
+  .Project-screenshot,
+  .Project-description,
+  .Project-stack,
+  .Project-title {
+    width: 300px;
+  }
+
+  .Project-screenshot {
+    height: 169px;
+  }
+}
