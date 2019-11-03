@@ -44,11 +44,6 @@ const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
             <MDNLogo />
           </a>
         </div>
-        {/* <li>
-          <a href="https://medium.com/@the_borgh">
-            <MediumLogo />
-          </a>
-        </li> */}
       </div>
 
       {scrollDownArrow ? (

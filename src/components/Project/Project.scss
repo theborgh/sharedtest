@@ -1,3 +1,5 @@
+@import "../../pages/constants";
+
 .Project {
   //border: 2px solid gray;
   width: 800px;
@@ -31,8 +33,17 @@
     width: 400px;
   }
 
+  &-title {
+    display: flex;
+  }
+
   &-name {
     font-weight: 700;
+  }
+
+  &-wip {
+    font-weight: 700;
+    margin-left: 1rem;
   }
 
   &-description {
@@ -53,7 +64,8 @@
     padding: 0 0.3rem;
 
     &:hover {
-      background: orangered;
+      color: $color-background;
+      background: $color-text;
     }
   }
 }

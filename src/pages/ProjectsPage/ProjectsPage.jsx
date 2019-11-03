@@ -28,6 +28,7 @@ const ProjectsPage = ({ scrollDownArrow }) => {
             screenshotUrl={project.screenshotUrl}
             repositoryUrl={project.repositoryUrl}
             liveUrl={project.liveUrl}
+            workInProgress={project.workInProgress}
           />
         ))}
       </ul>

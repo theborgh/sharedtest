@@ -8,7 +8,8 @@ const Project = ({
   techStack,
   screenshotUrl,
   repositoryUrl,
-  liveUrl
+  liveUrl,
+  workInProgress
 }) => {
   Project.propTypes = {
     name: PropTypes.string.isRequired,
@@ -16,7 +17,8 @@ const Project = ({
     techStack: PropTypes.array.isRequired,
     screenshotUrl: PropTypes.string.isRequired,
     repositoryUrl: PropTypes.string.isRequired,
-    liveUrl: PropTypes.string.isRequired
+    liveUrl: PropTypes.string.isRequired,
+    workInProgress: PropTypes.bool.isRequired
   };
 
   return (
@@ -29,16 +31,29 @@ const Project = ({
         }}
       >
         <div className="Project-links">
-          <a className="Project-link" href={repositoryUrl}>
+          <a
+            className="Project-link"
+            href={repositoryUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Source
           </a>
-          <a className="Project-link" href={liveUrl}>
+          <a
+            className="Project-link"
+            href={liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Live version
           </a>
         </div>
       </div>
       <div className="Project-info">
-        <div className="Project-name">{name}</div>
+        <div className="Project-title">
+          <div className="Project-name">{name}</div>
+          {workInProgress && <div className="Project-wip">[In progress]</div>}
+        </div>
         <div className="Project-description">{description}</div>
         <div className="Project-stack">
           {techStack
