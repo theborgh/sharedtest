@@ -16,3 +16,9 @@
     color: rgba(56, 100, 122, 1);
   }
 }
+
+@media only screen and (min-width: 800px) {
+  .footer p {
+    font-size: 1.3rem;
+  }
+}

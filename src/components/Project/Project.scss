@@ -79,16 +79,33 @@
       width: 100%;
       text-align: center;
     }
+
+    &-link {
+      font-size: 1.2rem;
+    }
   }
 }
 
 @media only screen and (max-width: 440px) {
   .Project,
   .Project-screenshot,
-  .Project-description,
   .Project-stack,
-  .Project-title {
+  .Project-info {
     width: 350px;
+  }
+
+  .Project-title {
+    width: 320px;
+  }
+
+  .Project-description {
+    font-size: 0.8rem;
+    width: 330px;
+  }
+
+  .Project-tech {
+    font-size: 0.8rem;
+    margin: 0.2rem;
   }
 
   .Project-screenshot {
@@ -99,13 +116,24 @@
 @media only screen and (max-width: 376px) {
   .Project,
   .Project-screenshot,
-  .Project-description,
   .Project-stack,
-  .Project-title {
+  .Project-info {
     width: 300px;
+  }
+
+  .Project-title {
+    width: 280px;
   }
 
   .Project-screenshot {
     height: 169px;
+  }
+
+  .Project-link {
+    font-size: 1rem;
+  }
+
+  .Project-description {
+    width: 280px;
   }
 }
