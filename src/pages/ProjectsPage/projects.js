@@ -70,7 +70,7 @@ export default [
   {
     name: "Clothing store",
     description:
-      "A SPA online store with user authentication, item cart, checkout, and more.",
+      "A SPA online store with user authentication, item cart, checkout, and more. (Work in progress)",
     techStack: ["React.js", "SPA", "Firebase", "React Router", "Redux"],
     screenshotUrl: clothingstore400,
     repositoryUrl: "https://github.com/theborgh/clothing-store",
