@@ -6,7 +6,6 @@ import { ReactComponent as GithubLogo } from "../../assets/logos/github.svg";
 import { ReactComponent as LinkedinLogo } from "../../assets/logos/linkedin.svg";
 import { ReactComponent as TwitterLogo } from "../../assets/logos/twitter.svg";
 import { ReactComponent as MDNLogo } from "../../assets/logos/mdn.svg";
-// import { ReactComponent as MediumLogo } from "../../assets/mediumLogo.svg";
 
 const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
   LandingPage.propTypes = {
@@ -25,22 +24,38 @@ const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
 
       <div className="social">
         <div className="social-logo">
-          <a href="https://github.com/theborgh">
+          <a
+            href="https://github.com/theborgh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <GithubLogo />
           </a>
         </div>
         <div className="social-logo">
-          <a href="https://www.linkedin.com/in/darioborghino/">
+          <a
+            href="https://www.linkedin.com/in/darioborghino/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <LinkedinLogo />
           </a>
         </div>
         <div className="social-logo">
-          <a href="https://twitter.com/DarioBorghino">
+          <a
+            href="https://twitter.com/DarioBorghino"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <TwitterLogo />
           </a>
         </div>
         <div className="social-logo">
-          <a href="https://wiki.developer.mozilla.org/en-US/profiles/theborgh">
+          <a
+            href="https://wiki.developer.mozilla.org/en-US/profiles/theborgh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <MDNLogo />
           </a>
         </div>

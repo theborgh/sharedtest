@@ -21,35 +21,67 @@ const AboutPage = ({ scrollDownArrow, scrollDownTarget }) => {
       <p>
         In that capacity, I covered a wide range of topics including
         advancements in{" "}
-        <a href="https://newatlas.com/optical-transistor-quantum-computing/28203/">
+        <a
+          href="https://newatlas.com/optical-transistor-quantum-computing/28203/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           transistor technology
         </a>
         , &nbsp;
-        <a href="https://newatlas.com/driverless-car-ethics/43926/">
+        <a
+          href="https://newatlas.com/driverless-car-ethics/43926/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           autonomous cars
         </a>
         ,&nbsp;
-        <a href="https://newatlas.com/silicon-quantum-computer/39711/">
+        <a
+          href="https://newatlas.com/silicon-quantum-computer/39711/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           quantum computing
         </a>
         ,&nbsp;
-        <a href="https://newatlas.com/wasp-big-delta-3d-printer-clay-housing/39414/">
+        <a
+          href="https://newatlas.com/wasp-big-delta-3d-printer-clay-housing/39414/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           3D printing
         </a>
         ,&nbsp;
-        <a href="https://newatlas.com/bumblebee-flight-path-navigation/24258/">
+        <a
+          href="https://newatlas.com/bumblebee-flight-path-navigation/24258/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           computer science
         </a>
         , as well as&nbsp;
-        <a href="https://newatlas.com/mars-one-human-settlement-2023/22799/">
+        <a
+          href="https://newatlas.com/mars-one-human-settlement-2023/22799/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           space news
         </a>
         . I also got to interview computer science pioneer&nbsp;
-        <a href="https://newatlas.com/laptops-history-35-years/42566/">
+        <a
+          href="https://newatlas.com/laptops-history-35-years/42566/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Alan Kay
         </a>
         &nbsp; and&nbsp;
-        <a href="https://newatlas.com/james-webb-space-telescope/36706/">
+        <a
+          href="https://newatlas.com/james-webb-space-telescope/36706/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Nobel prize winners
         </a>
         . This experience has helped me develop outstanding research skills,
@@ -58,7 +90,7 @@ const AboutPage = ({ scrollDownArrow, scrollDownTarget }) => {
         toward my work.
       </p>
       <p>
-        I have recently redescovered that my true passion is for building
+        I have recently rediscovered that my true passion is for building
         software. For the past few months I have been focused exclusively on
         learning frontend web development, with an emphasis on JavaScript and
         React.js. I love how React and its excellent ecosystem allow me to
