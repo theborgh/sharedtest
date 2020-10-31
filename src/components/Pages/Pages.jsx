@@ -3,9 +3,10 @@ import HomePage from "../../pages/HomePage/HomePage";
 import AboutPage from "../../pages/AboutPage/AboutPage";
 import SkillsPage from "../../pages/SkillsPage/SkillsPage";
 import ProjectsPage from "../../pages/ProjectsPage/ProjectsPage";
+import ContactPage from "../../pages/ContactPage/ContactPage";
 
 const Pages = () => {
-  const PageMap = [HomePage, AboutPage, SkillsPage, ProjectsPage];
+  const PageMap = [HomePage, AboutPage, SkillsPage, ProjectsPage, ContactPage];
 
   const nextPageName = Page => {
     switch (Page) {
@@ -15,6 +16,8 @@ const Pages = () => {
         return "skills";
       case SkillsPage:
         return "projects";
+      case ProjectsPage:
+        return "contact";
       default:
         return "";
     }
@@ -25,7 +28,7 @@ const Pages = () => {
       {PageMap.map(Page => (
         <Page
           key={Page}
-          scrollDownArrow={Page !== ProjectsPage}
+          scrollDownArrow={Page !== ContactPage}
           scrollDownTarget={nextPageName(Page)}
         />
       ))}

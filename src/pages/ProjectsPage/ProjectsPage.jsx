@@ -5,13 +5,10 @@ import ScrollDownArrow from "../../components/ScrollDownArrow/ScrollDownArrow";
 import Project from "../../components/Project/Project";
 import projects from "./projects";
 
-const ProjectsPage = ({ scrollDownArrow }) => {
+const ProjectsPage = ({ scrollDownArrow, scrollDownTarget }) => {
   ProjectsPage.propTypes = {
-    scrollDownArrow: PropTypes.bool
-  };
-
-  ProjectsPage.defaultProps = {
-    scrollDownArrow: false
+    scrollDownArrow: PropTypes.bool.isRequired,
+    scrollDownTarget: PropTypes.string.isRequired
   };
 
   return (
@@ -35,7 +32,7 @@ const ProjectsPage = ({ scrollDownArrow }) => {
 
       {scrollDownArrow ? (
         <div className="arrow">
-          <ScrollDownArrow />
+          <ScrollDownArrow target={scrollDownTarget} />
         </div>
       ) : null}
     </div>
