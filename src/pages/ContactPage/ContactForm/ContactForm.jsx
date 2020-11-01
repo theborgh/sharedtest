@@ -39,12 +39,6 @@ const ContactForm = () => {
 
   return (
     <div>
-      <form name="contact-form" netlify netlify-honeypot="bot-field" hidden>
-        <input type="text" name="name" />
-        <input type="email" name="email" />
-        <textarea name="message" />
-      </form>
-
       <form
         className="contactform"
         name="contact-form"
