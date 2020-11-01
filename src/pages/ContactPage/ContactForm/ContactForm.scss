@@ -1,0 +1,47 @@
+@import "../../constants";
+
+.contactform {
+  text-align: center;
+}
+
+.contactform-input {
+  margin-bottom: 0.5rem;
+}
+
+.contactform-labeltext {
+  font-size: 1rem;
+  margin-right: 0.4rem;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  resize: none;
+  max-width: 90vw;
+}
+
+input[type="text"],
+input[type="email"] {
+  height: 2rem;
+}
+
+.submit-container {
+  margin-bottom: 2rem;
+}
+
+.submit-button {
+  background-color: $color-submit-button;
+  color: white;
+  font-weight: 500;
+  height: 2.5rem;
+  width: 4rem;
+}
+
+.email-success {
+  font-size: 0.8rem;
+  color: green;
+}
+
+.email-error {
+  font-size: 0.8rem;
+}

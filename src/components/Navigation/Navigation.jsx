@@ -41,6 +41,11 @@ export default function Navigation() {
               Projects
             </a>
           </li>
+          <li className="navigation__item">
+            <a href="#contact" className="navigation__link" onClick={closeNav}>
+              Contact
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
