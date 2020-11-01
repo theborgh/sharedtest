@@ -17,7 +17,7 @@ const ContactForm = () => {
   const handleFormSubmit = e => {
     e.preventDefault();
 
-    fetch("/", {
+    fetch("/thankyou", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
@@ -36,9 +36,8 @@ const ContactForm = () => {
       className="contactform"
       name="contact-form"
       onSubmit={handleFormSubmit}
-      action="/"
+      action="/thankyou"
     >
-      <input type="hidden" name="form-name" value="contact-form" />
       <div className="contactform-input">
         <label htmlFor="name">
           <span className="contactform-labeltext">Your name</span>
