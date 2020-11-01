@@ -4,14 +4,14 @@ import PropTypes from "prop-types";
 import ScrollDownArrow from "../../components/ScrollDownArrow/ScrollDownArrow";
 import ContactForm from "./ContactForm/ContactForm";
 
-const AboutPage = ({ scrollDownArrow, scrollDownTarget }) => {
-  AboutPage.propTypes = {
+const ContactPage = ({ scrollDownArrow, scrollDownTarget }) => {
+  ContactPage.propTypes = {
     scrollDownArrow: PropTypes.bool.isRequired,
     scrollDownTarget: PropTypes.string.isRequired
   };
 
   return (
-    <div id="about" className="ContactPage">
+    <div id="contact" className="ContactPage">
       <h1>Contact</h1>
 
       <p>
@@ -30,4 +30,4 @@ const AboutPage = ({ scrollDownArrow, scrollDownTarget }) => {
   );
 };
 
-export default AboutPage;
+export default ContactPage;

@@ -25,11 +25,23 @@ input[type="email"] {
   height: 2rem;
 }
 
+.submit-container {
+  margin-bottom: 2rem;
+}
+
 .submit-button {
   background-color: $color-submit-button;
   color: white;
   font-weight: 500;
   height: 2.5rem;
   width: 4rem;
-  margin-bottom: 2rem;
+}
+
+.email-success {
+  font-size: 0.8rem;
+  color: green;
+}
+
+.email-error {
+  font-size: 0.8rem;
 }
