@@ -15,9 +15,7 @@ const ContactForm = () => {
   };
 
   const handleFormSubmit = e => {
-    e.preventDefault();
-
-    fetch("/thankyou", {
+    fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
@@ -29,6 +27,8 @@ const ContactForm = () => {
     })
       .then(() => setEmailSent(true))
       .catch(() => setEmailError(true));
+
+    e.preventDefault();
   };
 
   return (
