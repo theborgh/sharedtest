@@ -36,6 +36,7 @@ const ContactForm = () => {
       className="contactform"
       name="contact-form"
       onSubmit={handleFormSubmit}
+      action="/"
     >
       <input type="hidden" name="form-name" value="contact-form" />
       <div className="contactform-input">
