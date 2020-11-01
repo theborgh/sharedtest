@@ -36,7 +36,6 @@ const ContactForm = () => {
       className="contactform"
       name="contact-form"
       onSubmit={handleFormSubmit}
-      action="/thankyou"
     >
       <div className="contactform-input">
         <label htmlFor="name">
