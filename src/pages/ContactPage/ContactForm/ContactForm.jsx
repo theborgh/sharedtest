@@ -10,7 +10,7 @@ const ContactForm = () => {
 
   const encode = data => {
     return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
       .join("&");
   };
 
@@ -78,8 +78,6 @@ const ContactForm = () => {
         <textarea
           name="message"
           id="message"
-          cols="80"
-          rows="20"
           value={message}
           onChange={e => setMessage(e.target.value)}
           placeholder="Your message here"
@@ -102,7 +100,7 @@ const ContactForm = () => {
           </div>
         )}
 
-        {/* TODO: notify me when someone gets something other than 200 status response */}
+        {/* TODO: notify me when someone gets something other than 200 status response (lambda functions) */}
         {emailError && (
           <div className="email-error">
             Unfortunately there was a network error and your message could not

@@ -23,6 +23,14 @@ textarea {
 input[type="text"],
 input[type="email"] {
   height: 2rem;
+  width: 32rem;
+  max-width: 70vw;
+}
+
+// TODO: improve responsiveness of textarea and inputs (input wrapper at same width as textarea)
+textarea {
+  width: 40vw;
+  height: 18rem;
 }
 
 .submit-container {
