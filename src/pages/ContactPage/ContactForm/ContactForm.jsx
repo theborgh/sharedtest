@@ -45,7 +45,7 @@ const ContactForm = () => {
     >
       <input type="hidden" name="form-name" value="contact-form" />
       <div className="contactform-input">
-        <label htmlFor="name">
+        <label htmlFor="name" className="inputform-label">
           <span className="contactform-labeltext">Your name</span>
           <input
             type="text"
@@ -60,7 +60,7 @@ const ContactForm = () => {
         </label>
       </div>
       <div className="contactform-input">
-        <label htmlFor="email">
+        <label htmlFor="email" className="inputform-label">
           <span className="contactform-labeltext">Your email</span>
           <input
             type="email"
