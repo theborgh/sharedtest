@@ -2,12 +2,23 @@
 
 .contactform {
   text-align: center;
+  width: 40vw;
+  margin: 0 auto;
+  border: 1px solid green;
+}
+
+.contactform-textinputs {
+  display: flex;
+  margin: auto;
 }
 
 .contactform-input {
-  width: 60vw;
-  margin: auto;
   margin-bottom: 0.5rem;
+  flex-grow: 1;
+}
+
+.contactform-textinput {
+  flex-grow: 1;
 }
 
 .inputform-label {
@@ -17,6 +28,7 @@
 .contactform-labeltext {
   font-size: 1rem;
   margin-right: 0.4rem;
+  margin-left: 0.3rem;
 }
 
 input,
@@ -24,7 +36,6 @@ textarea {
   padding: 0.5rem;
   resize: none;
   max-width: 90vw;
-  flex-grow: 1;
 }
 
 input[type="text"],
@@ -57,6 +68,14 @@ textarea {
   font-weight: 500;
   height: 2.5rem;
   width: 4rem;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+}
+
+.submit-button:active {
+  background-color: $color-submit-button-active;
 }
 
 .email-success {

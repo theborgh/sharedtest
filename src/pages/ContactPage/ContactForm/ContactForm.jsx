@@ -44,35 +44,39 @@ const ContactForm = () => {
       onSubmit={handleFormSubmit}
     >
       <input type="hidden" name="form-name" value="contact-form" />
-      <div className="contactform-input">
-        <label htmlFor="name" className="inputform-label">
-          <span className="contactform-labeltext">Your name</span>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            value={name}
-            onChange={e => setName(e.target.value)}
-            placeholder="John Doe"
-            disabled={emailSent || emailError}
-            required
-          />
-        </label>
-      </div>
-      <div className="contactform-input">
-        <label htmlFor="email" className="inputform-label">
-          <span className="contactform-labeltext">Your email</span>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            value={email}
-            onChange={e => setEmail(e.target.value)}
-            placeholder="your@email.com"
-            disabled={emailSent || emailError}
-            required
-          />
-        </label>
+      <div className="contactform-textinputs">
+        <div className="contactform-input">
+          <label htmlFor="name" className="inputform-label">
+            <span className="contactform-labeltext">Your name</span>
+            <input
+              className="contactform-textinput"
+              type="text"
+              name="name"
+              id="name"
+              value={name}
+              onChange={e => setName(e.target.value)}
+              placeholder="John Doe"
+              disabled={emailSent || emailError}
+              required
+            />
+          </label>
+        </div>
+        <div className="contactform-input">
+          <label htmlFor="email" className="inputform-label">
+            <span className="contactform-labeltext">Your email</span>
+            <input
+              className="contactform-textinput"
+              type="email"
+              name="email"
+              id="email"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              placeholder="your@email.com"
+              disabled={emailSent || emailError}
+              required
+            />
+          </label>
+        </div>
       </div>
       <div className="contactform-input">
         <textarea
