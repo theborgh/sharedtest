@@ -2,9 +2,8 @@
 
 .contactform {
   text-align: center;
-  width: 40vw;
+  width: 45rem;
   margin: 0 auto;
-  border: 1px solid green;
 }
 
 .contactform-textinputs {
@@ -13,16 +12,18 @@
 }
 
 .contactform-input {
-  margin-bottom: 0.5rem;
   flex-grow: 1;
+  margin-bottom: 0.5rem;
 }
 
 .contactform-textinput {
+  flex-direction: row;
   flex-grow: 1;
 }
 
 .inputform-label {
   display: flex;
+  flex-direction: row;
 }
 
 .contactform-labeltext {
@@ -86,4 +87,26 @@ textarea {
 .email-error {
   font-size: 0.8rem;
   color: rgb(248, 93, 93);
+}
+
+@media only screen and (max-width: 1200px) {
+  .contactform {
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .contactform-textinputs {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contactform-textinputs {
+    display: block;
+  }
+
+  .inputform-label {
+    flex-direction: column;
+  }
 }
