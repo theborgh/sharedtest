@@ -1,6 +1,6 @@
 # Portfolio website
 
-A customizable portfolio website with a pure CSS menu, a separate mobile-only navigation, svg icons, and an svg radar chart to display technical skills.
+A customizable portfolio website with a pure CSS menu, a separate mobile-only navigation, svg icons, and an svg radar chart to display technical skills created with React (CRA).
 
 # Live version
 
