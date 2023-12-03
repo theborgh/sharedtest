@@ -1,11 +1,17 @@
 import paletteMaker400 from "../../assets/projects/palettemaker.webp";
-import dadjokes400 from "../../assets/projects/dadjokes.webp";
 import guesstheword400 from "../../assets/projects/guesstheword.webp";
 import portfolio400 from "../../assets/projects/portfolio.webp";
-import brainiac400 from "../../assets/projects/brainiac.webp";
-import clothingstore400 from "../../assets/projects/clothingstore.webp";
 
 export default [
+  {
+    name: "Bug Tracker",
+    description: "Next.js app that lets developers create and track bugs.",
+    techStack: ["Next.js", "TypeScript", "Prisma", "Tailwind CSS"],
+    screenshotUrl: paletteMaker400,
+    repositoryUrl: "https://github.com/theborgh/bug-tracker",
+    liveUrl: "https://bug-tracker-sigma.vercel.app/",
+    workInProgress: false
+  },
   {
     name: "Palette Maker",
     description:
@@ -20,17 +26,6 @@ export default [
     screenshotUrl: paletteMaker400,
     repositoryUrl: "https://github.com/theborgh/palette-maker",
     liveUrl: "https://palettemaker.netlify.com/",
-    workInProgress: false
-  },
-
-  {
-    name: "The Dad Jokes App",
-    description:
-      "A small application that fetches random, unique jokes and displays them to the user ten at a time, allows the user to vote on them, delete the jokes, or fetch more, saving state to localStorage.",
-    techStack: ["React.js", "CSS", "localStorage"],
-    screenshotUrl: dadjokes400,
-    repositoryUrl: "https://github.com/theborgh/dad-jokes",
-    liveUrl: "https://dadjokesapp.netlify.com/",
     workInProgress: false
   },
 
@@ -54,27 +49,5 @@ export default [
     repositoryUrl: "https://github.com/theborgh/theborgh.github.io",
     liveUrl: "https://theborgh.dev/",
     workInProgress: false
-  },
-
-  {
-    name: "Brainiac",
-    description:
-      "Process images (provided by URL by the user) and detect all the faces in the picture, drawing a rectangle around them.",
-    techStack: ["React.js", "ClarifAI", "Node.js", "Express"],
-    screenshotUrl: brainiac400,
-    repositoryUrl: "https://github.com/theborgh/brainiac",
-    liveUrl: "https://brainiak.herokuapp.com/",
-    workInProgress: false
-  },
-
-  {
-    name: "Clothing store",
-    description:
-      "A SPA online store with user authentication, item cart, checkout, and more. (Work in progress)",
-    techStack: ["React.js", "SPA", "Firebase", "React Router", "Redux"],
-    screenshotUrl: clothingstore400,
-    repositoryUrl: "https://github.com/theborgh/clothing-store",
-    liveUrl: "https://reactclothingstore.netlify.com/",
-    workInProgress: true
   }
 ];
