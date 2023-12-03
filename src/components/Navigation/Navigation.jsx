@@ -13,6 +13,7 @@ export default function Navigation() {
         id="navi-toggle"
         className="navigation__checkbox"
       />
+      {/* eslint-disable-next-line jsx-a11y/label-has-for, jsx-a11y/label-has-associated-control */}
       <label htmlFor="navi-toggle" className="navigation__button">
         <span className="navigation__icon">&nbsp;</span>
       </label>
