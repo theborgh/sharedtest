@@ -57,8 +57,9 @@ const Project = ({
         <div className="Project-description">{description}</div>
         <div className="Project-stack">
           {techStack
-            ? techStack.map((tech, i) => (
-                <div key={i} className="Project-tech">
+            ? techStack.map(tech => (
+                // eslint-disable-next-line react/jsx-indent
+                <div key={tech} className="Project-tech">
                   {tech}
                 </div>
               ))
