@@ -48,7 +48,7 @@ const SkillsPage = ({ scrollDownArrow, scrollDownTarget }) => {
 
   return (
     <div id="skills" className="SkillsPage">
-      <h1>Skills</h1>
+      <h1>Technical skills</h1>
 
       <div className="RadarChart">
         <RadarChart

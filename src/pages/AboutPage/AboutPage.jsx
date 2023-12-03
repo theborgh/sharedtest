@@ -15,11 +15,8 @@ const AboutPage = ({ scrollDownArrow, scrollDownTarget }) => {
       <p>
         I studied software engineering at the Polytechnic University of Turin,
         Italy and worked as a science and technology journalist for several
-        online publications including Australia-based Gizmag.com (now New
-        Atlas).
-      </p>
-      <p>
-        In that capacity, I covered a wide range of topics including
+        online publications including Australia-based Gizmag.com (now <a href="http://newatlas.com/" target="_blank">New
+        Atlas</a>). In that capacity I covered a wide range of topics including
         advancements in{" "}
         <a
           href="https://newatlas.com/optical-transistor-quantum-computing/28203/"
@@ -90,19 +87,12 @@ const AboutPage = ({ scrollDownArrow, scrollDownTarget }) => {
         toward my work.
       </p>
       <p>
-        I have recently rediscovered that my true passion is for building
-        software. For the past few months I have been focused exclusively on
-        learning frontend web development, with an emphasis on JavaScript and
-        React.js. I love how React and its excellent ecosystem allow me to
-        quickly sketch an idea in a modular, declarative and performant way
-        &mdash; and how third-party tools then let me deploy my projects in a
-        matter of minutes, across platforms and for the entire world to see.
-      </p>
+        I have professional experience as a frontend developer for a large company, both in-office and remotely, working on projects involving ReactJS, JavaScript, AngularJS, and some mobile development with Ionic/Cordova. In my free time, I have also built several projects exploring more recent technologies (NextJS, TypeScript, Prisma, etc) both by myself and in collaboration with other developers via <a href="http://chingu.io/" target="_blank" rel="noopener noreferrer">Chingu</a>, a remote developer community.</p>
+        
       <p>
-        While my professional programming experience may be limited, my
-        educational background allows me to pick up new technical concepts
-        quickly and deeply, with an emphasis on understanding how things work
-        under the hood.
+        My educational background allows me to pick up new technical concepts
+        quickly, with an emphasis on understanding how things work
+        under the hood. I am committed to continuing education while striking a balance between learning modern practices and not getting lost in the ever-evolving world of frontend development.
       </p>
 
       {scrollDownArrow ? (
