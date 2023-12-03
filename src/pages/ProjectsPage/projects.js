@@ -1,13 +1,14 @@
 import paletteMaker400 from "../../assets/projects/palettemaker.webp";
 import guesstheword400 from "../../assets/projects/guesstheword.webp";
 import portfolio400 from "../../assets/projects/portfolio.webp";
+import bugtracker400 from "../../assets/projects/bugtracker.webp";
 
 export default [
   {
     name: "Bug Tracker",
     description: "Next.js app that lets developers create and track bugs.",
     techStack: ["Next.js", "TypeScript", "Prisma", "Tailwind CSS"],
-    screenshotUrl: paletteMaker400,
+    screenshotUrl: bugtracker400,
     repositoryUrl: "https://github.com/theborgh/bug-tracker",
     liveUrl: "https://bug-tracker-sigma.vercel.app/",
     workInProgress: false
