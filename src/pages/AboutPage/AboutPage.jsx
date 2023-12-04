@@ -106,8 +106,8 @@ const AboutPage = ({ scrollDownArrow, scrollDownTarget }) => {
         My educational background allows me to pick up new technical concepts
         quickly, with an emphasis on understanding how things work under the
         hood. I am committed to continuing education while striking a balance
-        between learning modern practices and not getting lost in the
-        ever-evolving world of frontend development.
+        between learning modern practices and not getting lost in the latest
+        fads in the ever-evolving world of frontend development.
       </p>
 
       {scrollDownArrow ? (
