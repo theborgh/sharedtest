@@ -20,7 +20,7 @@ const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
   return (
     <div id="home" className="LandingPage">
       <h1 className="name">Dario Borghino</h1>
-      <h2 className="title">Front-end Developer</h2>
+      <h2 className="title">Web Developer</h2>
 
       <div className="social">
         <div className="social-logo">
