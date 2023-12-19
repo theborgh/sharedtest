@@ -5,7 +5,6 @@ import ScrollDownArrow from "../../components/ScrollDownArrow/ScrollDownArrow";
 import { ReactComponent as GithubLogo } from "../../assets/logos/github.svg";
 import { ReactComponent as LinkedinLogo } from "../../assets/logos/linkedin.svg";
 import { ReactComponent as TwitterLogo } from "../../assets/logos/twitter.svg";
-import { ReactComponent as MDNLogo } from "../../assets/logos/mdn.svg";
 
 const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
   LandingPage.propTypes = {
@@ -48,15 +47,6 @@ const LandingPage = ({ scrollDownArrow, scrollDownTarget }) => {
             rel="noopener noreferrer"
           >
             <TwitterLogo />
-          </a>
-        </div>
-        <div className="social-logo">
-          <a
-            href="https://wiki.developer.mozilla.org/en-US/profiles/theborgh"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <MDNLogo />
           </a>
         </div>
       </div>
